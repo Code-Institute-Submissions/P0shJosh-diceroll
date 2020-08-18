@@ -78,6 +78,7 @@ transform: translate(-50%, -50%);
     position: relative;
     overflow: hidden;
   }
+
   .hvr-underline-from-left:before {
     content: "";
     position: absolute;
@@ -98,7 +99,31 @@ transform: translate(-50%, -50%);
     right: 0;
   }
 
-
  .col-md-4, .col-md-8 {
    border: 2px solid black;
  }
+
+ .maincontent {
+   min-height: 90vh;
+ }
+
+ .dicebox, .dicebutton {
+   min-height: 10vh;
+   margin-top: 5vh;
+   margin-bottom: 5vh;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .dicebutton {
+  min-height: 5vh;
+  border: 0px;
+}
+
+.dice {
+  max-height: 8em;
+}
+
+.button {
+  min-height: 5vh;
+}
