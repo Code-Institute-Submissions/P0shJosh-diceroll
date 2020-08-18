@@ -1,4 +1,7 @@
-body {background-color: rgb(255, 248, 220);}
+body {
+  background-color: rgb(255, 248, 220);
+  overflow-x: hidden;
+}
 
 
 .diceroll-logo {
@@ -94,3 +97,8 @@ transform: translate(-50%, -50%);
   .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
     right: 0;
   }
+
+
+ .col-md-4, .col-md-8 {
+   border: 2px solid black;
+ }
