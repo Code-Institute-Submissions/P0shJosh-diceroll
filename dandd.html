@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Exo+2:wght@500;600;700;800&family=Fjalla+One&family=Inconsolata:wght@500;600;700;800;900&family=Oswald:wght@500;700&family=Poppins:wght@500;700&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/960.css" />
+    <script src="./assets/js/script.js"></script>
     <script
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
@@ -22,7 +23,7 @@
       src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-
+    
     <title>Dungeons and Dragons</title>
   </head>
 
@@ -43,19 +44,14 @@
 
         <div class="row">
           <div class="col-md-8 dicebox">
-            <img src="assets/images/d4.png" class="d4 dice" alt="4 Sided Die">
-            <img src="assets/images/d6.png" class="d6 dice" alt="6 Sided Die">
-            <img src="assets/images/d8.png" class="d8 dice" alt="8 Sided Die">
-            <img src="assets/images/d10.png" class="d10 dice" alt="10 Sided Die">
-            <img src="assets/images/d12.png" class="d12 dice" alt="12 Sided Die">
-            <img src="assets/images/d20.png" class="d20 dice" alt="20 Sided Die">
-            <img src="assets/images/d100.png" class="d100 dice" alt="Percentile Die">
+            <div id="dices">
+            </div>
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-8 dicebox">
-            <div class="selected">
+            <div id="selected">
               
             </div>
           </div>
@@ -69,12 +65,12 @@
 
         <div class="row">
           <div class="col-md-8 dicebox">
-            test
+            
           </div>
         </div>
 
       </div>
-
+      
     </div>
 
     <!--Footer-->
