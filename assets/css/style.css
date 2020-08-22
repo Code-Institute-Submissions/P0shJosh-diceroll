@@ -121,15 +121,23 @@ transform: translate(-50%, -50%);
   border: 0px;
 }
 
-#dices, #selected {
+#allthedice, #selected, #results {
   position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-#dices img, #selected img {
+
+#allthedice img, #selected img, #results img {
   max-height: 6em;
+  min-width: 6em;
+  max-width: 6em;
+}
+
+#results div {
+  margin-left: 2.72em;
+  margin-right: 2.72em;
 }
 
 .button {

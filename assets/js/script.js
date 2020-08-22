@@ -1,5 +1,5 @@
 window.addEventListener("load", () => {
-    const dices = [
+    const allthedice = [
         {value: 4, image:'assets/images/d4.png'},
         {value: 6, image:'assets/images/d6.png'},
         {value: 8, image:'assets/images/d8.png'},
@@ -8,28 +8,45 @@ window.addEventListener("load", () => {
         {value: 20, image:'assets/images/d20.png'},
         {value: 100, image:'assets/images/d100.png'},
     ];
-    
-    const dicesDiv = document.getElementById("dices");
-    const dicesSelectedDiv = document.getElementById("selected");
 
-    let dicesSelected = [];
+    const diceDiv = document.getElementById("allthedice");
+    const diceSelectedDiv = document.getElementById("selected");
+    const diceResultDiv = document.getElementById("results");
 
-    dices.forEach((item)=>{
+    let SelectedDice = [];
+
+    allthedice.forEach((item)=>{
         let dice = document.createElement("div");
         dice.innerHTML = `<img src="${item.image}"/>`;
         dice.addEventListener("click", ()=>{
-            dicesSelected = [...dicesSelected, dices[dices.indexOf(item)]];
-            renderDicesSelected();
+            SelectedDice = [...SelectedDice, allthedice[allthedice.indexOf(item)]];
+            renderDiceSelected();
+            rollingDiceSelected();
         });
-        dicesDiv.append(dice);
+        diceDiv.append(dice);
     });
 
-    renderDicesSelected = () => {
-        dicesSelectedDiv.innerHTML = "";
-        dicesSelected.forEach(item => {
+    renderDiceSelected = () => {
+        diceSelectedDiv.innerHTML = "";
+        SelectedDice.forEach(item => {
             let dice = document.createElement("div");
             dice.innerHTML = `<img src="${item.image}"/>`;
-            dicesSelectedDiv.append(dice);
+            diceSelectedDiv.append(dice);
         });
-    }
+    };
+
+    rollingDiceSelected = () => {
+        diceResultDiv.innerHTML = "";
+        SelectedDice.forEach(item => {
+            let dice = document.createElement("div");
+            dice.innerHTML = Math.floor((Math.random() * `${item.value}`) + 1);
+            diceResultDiv.append(dice);
+        });
+    };
+
+    $( "#results" ).hide();
+    $( "#roller" ).click(function() {
+        $( "#results" ).show();
+    });
 });
+
