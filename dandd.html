@@ -36,7 +36,9 @@
 
       <!--Previous Rolls Section-->
       <div class="col-md-4">
-        test
+        <div id="historicRolls">
+
+        </div>
       </div>
       
       <!--Dice Roller Section-->
@@ -65,11 +67,11 @@
             </div>
           </div>
         </div>
-        
+
         <div class="row">
           <div class="col-md-4 dicebutton">
-            <button id="roller" onclick="toggleResults()" type="button" class="btn btn-secondary btn-lg btn-block">Roll that Shit</button>
-            <button type="button" class="btn btn-secondary btn-lg btn-block">Empty that Shit</button>
+            <button id="roller" type="button" class="btn btn-secondary btn-lg btn-block">Roll that Shit</button>
+            <button id= "restart" onclick="removeDice()" type="button" class="btn btn-secondary btn-lg btn-block">Empty that Shit</button>
           </div>
         </div>
 
