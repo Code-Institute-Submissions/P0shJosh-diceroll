@@ -1,142 +1,160 @@
+/*--------------------------------------- Body --------------------------------------- */
+
 body {
   background-color: rgb(255, 248, 220);
   overflow-x: hidden;
 }
 
-
+/*--------------------------------------- Index Page --------------------------------------- */
 .diceroll-logo {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -140%);
-  }
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -140%);
+}
 
 .gamelinks {
-text-align: center;
-position: fixed;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .col-sm-auto {
-    padding: 0px 5em 0px 5em;
+  padding: 0px 5em 0px 5em;
 }
 
 .col-sm {
-    border: 1.5px solid black;
-    padding: 1.5em 0 1.5em 0;
-    margin: 0 5em 0 5em;  
+  border: 1.5px solid black;
+  padding: 1.5em 0 1.5em 0;
+  margin: 0 5em 0 5em;
 }
 
 .col-sm h2 {
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 600;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
 }
 
-/* Grow Shadow */
+/*------- Shadow Effect ------- */
 .hvr-grow-shadow {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: box-shadow, transform;
-    transition-property: box-shadow, transform;
-  }
-  .hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
-    box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
 
+.hvr-grow-shadow:hover,
+.hvr-grow-shadow:focus,
+.hvr-grow-shadow:active {
+  box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/*--------------------------------------- Footer --------------------------------------- */
 .navbar {
-    overflow: hidden;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 
-  .navbar h5 {
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 1vw 5vw;
-  }
- 
-  /* Underline From Left */
+.navbar h5 {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 1vw 5vw;
+}
+
 .hvr-underline-from-left {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    overflow: hidden;
-  }
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
 
-  .hvr-underline-from-left:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    right: 100%;
-    bottom: 0;
-    background: grey;
-    height: 4px;
-    -webkit-transition-property: right;
-    transition-property: right;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-  }
-  .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
-    right: 0;
-  }
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: grey;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
 
- .col-md-4, .col-md-8 {
-   border: 2px solid black;
- }
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
+  right: 0;
+}
 
- .maincontent {
-   min-height: 90vh;
- }
+/*--------------------------------------- D&D Dice Roller --------------------------------------- */
+.col-md-4,
+.col-md-8 {
+  border: 2px solid black;
+}
 
- .dicebox, .dicebutton {
-   min-height: 11vh;
-   margin-top: 5vh;
-   margin-bottom: 5vh;
-   margin-left: auto;
-   margin-right: auto;
-   
- }
+.maincontent {
+  min-height: 90vh;
+}
 
- .dicebutton {
+.dicebox,
+.dicebutton {
+  min-height: 11vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dicebutton {
   min-height: 5vh;
   border: 0px;
 }
 
-#allthedice, #selected, #results {
+#allthedice,
+#selected,
+#results {
   position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-
-#allthedice img, #selected img, #results img {
+#allthedice img,
+#selected img,
+#results img {
   max-height: 6em;
-  min-width: 6em;
-  max-width: 6em;
+  width: 6em;
+  
 }
 
 #results div {
-  margin-left: 2.72em;
-  margin-right: 2.72em;
-}
+  
+  width: 3em;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  font-size: 2em;
+  text-align: center;
+  
 
 .button {
   min-height: 5vh;
