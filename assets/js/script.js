@@ -41,14 +41,17 @@ window.addEventListener("load", () => {
     });
   };
   saveHistory = () => {
+    if(hasRolled){
     let rolls = [];
     SelectedDice.forEach((item, index) => {
       let rolledNumber = rolledNumbers[index];
       rolls = [...rolls, { dice: item, rolled: rolledNumber }];
     });
     history = [...history, rolls];
+    };
   };
   renderHistory = () => {
+      if(hasRolled){
     diceHistoryDiv.innerHTML = "";
     history.forEach((round) => {
       round.forEach((roll) => {
@@ -58,6 +61,7 @@ window.addEventListener("load", () => {
       });
       diceHistoryDiv.prepend(document.createElement("hr"));
     });
+    };
   };
 
   rollingDiceSelected = () => {
@@ -80,13 +84,11 @@ window.addEventListener("load", () => {
   });
 
   removeDice = () => {
-    if(hasRolled){
     saveHistory();
     renderHistory();
     SelectedDice = [];
     rolledNumbers = [];
     hasRolled = false;
-    };
   };
 
   $("#restart").click(function () {
