@@ -148,13 +148,12 @@ body {
 }
 
 #results div {
-  
   width: 3em;
   font-family: 'Roboto Mono', monospace;
   font-weight: 700;
   font-size: 2em;
   text-align: center;
-  
+}
 
 .button {
   min-height: 5vh;
