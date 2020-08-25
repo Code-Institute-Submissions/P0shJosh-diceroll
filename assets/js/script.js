@@ -79,8 +79,12 @@ window.addEventListener("load", () => {
 
   $("#results").hide();
   $("#roller").click(function () {
+    if (SelectedDice == ""){
+        hasrolled = false;
+    } else {
     $("#results").show();
     hasRolled = true;
+    };
   });
 
   removeDice = () => {
