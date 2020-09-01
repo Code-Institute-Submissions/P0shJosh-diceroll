@@ -17,7 +17,9 @@ window.addEventListener("load", () => {
   let SelectedDice = [];
   let rolledNumbers = [];
   let history = [];
-  var hasRolled = false;
+  let hasRolled = false;
+
+  $("#results").hide();
 
   allthedice.forEach((item) => {
     let dice = document.createElement("div");
@@ -38,6 +40,17 @@ window.addEventListener("load", () => {
       let dice = document.createElement("div");
       dice.innerHTML = `<img src="${item.image}"/>`;
       diceSelectedDiv.append(dice);
+    });
+  };
+
+  rollingDiceSelected = () => {
+    diceResultDiv.innerHTML = "";
+    SelectedDice.forEach((item, index) => {
+      let rolledNumber = Math.floor(Math.random() * `${item.value}` + 1);
+      let dice = document.createElement("div");
+      dice.innerHTML = rolledNumber;
+      rolledNumbers[index] = rolledNumber;
+      diceResultDiv.append(dice);
     });
   };
 
@@ -69,17 +82,6 @@ window.addEventListener("load", () => {
     }
   };
 
-  rollingDiceSelected = () => {
-    diceResultDiv.innerHTML = "";
-    SelectedDice.forEach((item, index) => {
-      let rolledNumber = Math.floor(Math.random() * `${item.value}` + 1);
-      let dice = document.createElement("div");
-      dice.innerHTML = rolledNumber;
-      rolledNumbers[index] = rolledNumber;
-      diceResultDiv.append(dice);
-    });
-  };
-
   rollalldice = () => {
     if (SelectedDice == "") {
       hasrolled = false;
@@ -93,8 +95,6 @@ window.addEventListener("load", () => {
       renderHistory();
     }
   };
-
-  $("#results").hide();
 
   removeDice = () => {
     SelectedDice = [];
