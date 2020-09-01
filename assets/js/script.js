@@ -40,56 +40,63 @@ window.addEventListener("load", () => {
       diceSelectedDiv.append(dice);
     });
   };
+
   saveHistory = () => {
-    if(hasRolled){
-    let rolls = [];
-    SelectedDice.forEach((item, index) => {
-      let rolledNumber = rolledNumbers[index];
-      rolls = [...rolls, { dice: item, rolled: rolledNumber }];
-    });
-    history = [...history, rolls];
-    };
-  };
-  renderHistory = () => {
-      if(hasRolled){
-    diceHistoryDiv.innerHTML = "";
-    history.forEach((round) => {
-      round.forEach((roll) => {
-        let div = document.createElement("div");
-        div.innerText = `Dice: ${roll.dice.value} - Rolled: ${roll.rolled}`;
-        diceHistoryDiv.prepend(div);
+    if (hasRolled) {
+      let rolls = [];
+      SelectedDice.forEach((item, index) => {
+        let rolledNumber = rolledNumbers[index];
+        rolls = [...rolls, { dice: item, rolled: rolledNumber }];
       });
-      diceHistoryDiv.prepend(document.createElement("hr"));
-    });
-    };
+      history = [...history, rolls];
+    }
   };
 
-  rollingDiceSelected = () => {
-    if (!hasRolled) {
-      diceResultDiv.innerHTML = "";
-      SelectedDice.forEach((item, index) => {
-        let rolledNumber = Math.floor(Math.random() * `${item.value}` + 1);
-        let dice = document.createElement("div");
-        dice.innerHTML = rolledNumber;
-        rolledNumbers[index] = rolledNumber;
-        diceResultDiv.append(dice);
+  renderHistory = () => {
+    if (hasRolled) {
+      diceHistoryDiv.innerHTML = "";
+      history.forEach((round) => {
+        round
+          .slice()
+          .reverse()
+          .forEach((roll) => {
+            let div = document.createElement("div");
+            div.innerText = `Dice: ${roll.dice.value} - Rolled: ${roll.rolled}`;
+            diceHistoryDiv.prepend(div);
+          });
+        diceHistoryDiv.prepend(document.createElement("hr"));
       });
     }
   };
 
-  $("#results").hide();
-  $("#roller").click(function () {
-    if (SelectedDice == ""){
-        hasrolled = false;
+  rollingDiceSelected = () => {
+    diceResultDiv.innerHTML = "";
+    SelectedDice.forEach((item, index) => {
+      let rolledNumber = Math.floor(Math.random() * `${item.value}` + 1);
+      let dice = document.createElement("div");
+      dice.innerHTML = rolledNumber;
+      rolledNumbers[index] = rolledNumber;
+      diceResultDiv.append(dice);
+    });
+  };
+
+  rollalldice = () => {
+    if (SelectedDice == "") {
+      hasrolled = false;
     } else {
-    $("#results").show();
-    hasRolled = true;
-    };
-  });
+      $("#results").show();
+      hasRolled = true;
+    }
+    if (hasRolled) {
+      rollingDiceSelected();
+      saveHistory();
+      renderHistory();
+    }
+  };
+
+  $("#results").hide();
 
   removeDice = () => {
-    saveHistory();
-    renderHistory();
     SelectedDice = [];
     rolledNumbers = [];
     hasRolled = false;
