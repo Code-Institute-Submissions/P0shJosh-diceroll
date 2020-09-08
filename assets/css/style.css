@@ -36,6 +36,14 @@ body {
   font-weight: 600;
 }
 
+a {
+  color: black;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
 /*------- Shadow Effect ------- */
 .hvr-grow-shadow {
   display: inline-block;
@@ -111,9 +119,6 @@ body {
   border: 2px solid black;
 }
 
-.col-sm-auto {
-  border: 1px solid black;
-}
 .maincontent {
   min-height: 90vh;
 }
