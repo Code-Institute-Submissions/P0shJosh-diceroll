@@ -140,11 +140,14 @@ body {
 }
 
 #allthedice img,
-#selected img,
-#results img {
+#selected img {
   max-height: 6em;
   width: 6em;
-  
+}
+
+.ffgdice img {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 #results div {
@@ -153,6 +156,11 @@ body {
   font-weight: 700;
   font-size: 2em;
   text-align: center;
+}
+
+#results img {
+  max-height: 2em;
+  width: 2em;
 }
 
 .button {
@@ -164,3 +172,4 @@ body {
   font-weight: 600;
   font-size: 1.5em;
 }
+
