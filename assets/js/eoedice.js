@@ -174,4 +174,5 @@ window.addEventListener("load", () => {
       $("#results").empty();
       $("#results").hide();
     });
+    
   });

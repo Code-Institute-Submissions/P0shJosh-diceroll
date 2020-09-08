@@ -44,6 +44,7 @@ a:hover {
   color: black;
   text-decoration: none;
 }
+
 /*------- Shadow Effect ------- */
 .hvr-grow-shadow {
   display: inline-block;
@@ -183,7 +184,4 @@ a:hover {
   min-height: 5vh;
 }
 
-#historicRolls div {
-  grid-row: 1;
-}
 
