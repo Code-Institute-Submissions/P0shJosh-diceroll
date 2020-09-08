@@ -146,7 +146,7 @@ window.addEventListener("load", () => {
         let rolls = [];
         SelectedDice.forEach((item, index) => {
           let rolledNumber = rolledNumbers[index];
-          rolls = [...rolls, { dice: item, rolled: rolledNumber }];
+          rolls = [...rolls, { dice: item, rolled: item.results[rolledNumber].image}];
         });
         history = [...history, rolls];
       }
@@ -161,7 +161,7 @@ window.addEventListener("load", () => {
             .reverse()
             .forEach((roll) => {
               let div = document.createElement("div");
-              div.innerText = `Dice: ${roll.dice.value} - Rolled: ${roll.rolled}`;
+              div.innerHTML = `<img src="${roll.rolled}"/>`;
               diceHistoryDiv.prepend(div);
             });
           diceHistoryDiv.prepend(document.createElement("hr"));
