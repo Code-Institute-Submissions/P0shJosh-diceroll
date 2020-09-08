@@ -21,7 +21,7 @@ window.addEventListener("load", () => {
         ]},
         { selected: 'proficiency', image: "assets/images/starwars/dice_proficiency.png", results: [
           { result: 'blank', value: 1, image: "assets/images/starwars/force_light.png" },
-          { result: 'triumph', value: 2, image: "assets/images/starwars/result_ability.png" },
+          { result: 'triumph', value: 2, image: "assets/images/starwars/result_triumph.png" },
           { result: 'success', value: 3, image: "assets/images/starwars/result_success.png" },
           { result: 'success', value: 4, image: "assets/images/starwars/result_success.png" },
           { result: 'advantage', value: 5, image: "assets/images/starwars/result_advantage.png" },
@@ -38,8 +38,8 @@ window.addEventListener("load", () => {
           { result: 'blank', value: 2, image: "assets/images/starwars/force_light.png" },
           { result: 'fail', value: 3, image: "assets/images/starwars/result_failure.png" },
           { result: 'fail', value: 4, image: "assets/images/starwars/result_failure.png" },
-          { result: 'threat', value: 5, image: "assets/images/starwars/result_difficulty.png" },
-          { result: 'threat', value: 6, image: "assets/images/starwars/result_challenge.png" },
+          { result: 'threat', value: 5, image: "assets/images/starwars/result_threat.png" },
+          { result: 'threat', value: 6, image: "assets/images/starwars/result_threat.png" },
         ]},
         { selected: 'difficulty', image: "assets/images/starwars/dice_difficulty.png", results: [ 
           { result: 'blank', value: 1, image: "assets/images/starwars/force_light.png" },
@@ -140,6 +140,7 @@ window.addEventListener("load", () => {
             .reverse()
             .forEach((roll) => {
               let div = document.createElement("div");
+              div.style = 'display: inline-grid; vertical-align: baseline';
               div.innerHTML = `<img src="${roll.rolled}"/>`;
               diceHistoryDiv.prepend(div);
             });
