@@ -120,6 +120,17 @@ a:hover {
   right: 0;
 }
 
+#modalBox {
+  position: absolute;
+  transform: translate(-32%);
+  width: 50.1vw;
+  height: 70vh;
+}
+#map {
+  display: flex;
+  width: 50vw;
+  height: 60vh;
+}
 /*--------------------------------------- D&D Dice Roller --------------------------------------- */
 .col-md-4,
 .col-md-8 {
@@ -206,6 +217,7 @@ a:hover {
   color: #fff;
   background-color: #8320D9;
   border-color: #8320D9;
+   
 }
 
 .btn.btn-secondary:hover,
@@ -213,6 +225,7 @@ a:hover {
   color: #fff;
   background-color: #8320D9;
   border-color: #8320D9;
+ 
 }
 
 .btn.btn-secondary.active,
@@ -222,6 +235,7 @@ a:hover {
   color: #fff;
   background-color: #8320D9;
   border-color: #8320D9;
+  
 }
 
 .btn.btn-secondary.active.focus,
