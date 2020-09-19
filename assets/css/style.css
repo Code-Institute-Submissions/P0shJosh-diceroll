@@ -8,7 +8,6 @@ body {
 .modal-body, .contact2-form, .wrap-contact2, .modal-content, .container-contact2{
   background-color: rgb(255, 248, 220);
   color: rgb(255, 248, 220);
-  
 }
 
 /*--------------------------------------- Index Page --------------------------------------- */
@@ -120,17 +119,6 @@ a:hover {
   right: 0;
 }
 
-#modalBox {
-  position: absolute;
-  transform: translate(-32%);
-  width: 50.1vw;
-  height: 70vh;
-}
-#map {
-  display: flex;
-  width: 50vw;
-  height: 60vh;
-}
 /*--------------------------------------- D&D Dice Roller --------------------------------------- */
 .col-md-4,
 .col-md-8 {
@@ -259,8 +247,28 @@ a:hover {
   box-shadow: 0 0 0 0.2rem grey;
 }
 
-/*-------------------------------------Contact Form-------------------------------------*/
+/*--------------------------------------- Modal Boxes --------------------------------------- */
+#modalBox {
+  position: absolute;
+  transform: translate(-32%);
+  width: 50.1vw;
+  height: 80vh;
+}
+#map {
+  display: flex;
+  width: 50vw;
+  height: 60vh;
+}
 
+.modal-text {
+  color: black;
+}
+
+.modal-sub {
+  padding: 1em 1em 1em 1em;
+}
+
+/*-------------------------------------Contact Form-------------------------------------*/
 * {
 	margin: 0px; 
 	padding: 0px; 

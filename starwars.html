@@ -41,6 +41,14 @@
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
     <script src="./assets/js/map.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_8R2Nf0xGDOk5V837V47Uc");
+    })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
@@ -113,7 +121,7 @@
           <div class="modal-body">
             <div class="container-contact2">
               <div class="wrap-contact2">
-                <form class="contact2-form validate-form">
+                <form class="contact2-form validate-form" id="contactForm" onsubmit="emailjs.sendForm('service_z3n0zgh', 'template_dxkk6p5', this).then(reset()); return false;" method="post">
                   <span class="contact2-form-title">
                     Contact Us
                   </span>
@@ -159,14 +167,14 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content" id="modalBox">
           <div class="modal-header" id="whereEdge">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h2 class="modal-title modal-text" id="exampleModalLabel">Your Local Game Board Cafe</h2>
             <button type="button" class="close" data-dismiss="modal"
               aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal_body_map">
-            
+              <h4 class="modal-text modal-sub">If you want to meet other players, or need space for your group... </h4>
               <div id="map"></div>
             
           </div>
