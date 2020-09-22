@@ -5,7 +5,11 @@ body {
   overflow-x: hidden;
 }
 
-.modal-body, .contact2-form, .wrap-contact2, .modal-content, .container-contact2{
+.modal-body,
+.contact2-form,
+.wrap-contact2,
+.modal-content,
+.container-contact2 {
   background-color: rgb(255, 248, 220);
   color: rgb(255, 248, 220);
 }
@@ -166,7 +170,7 @@ a:hover {
 
 #results div {
   width: 3em;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-weight: 700;
   font-size: 2em;
   text-align: center;
@@ -187,15 +191,15 @@ a:hover {
 
 .button {
   min-height: 5vh;
-  border-color: #8320D9;
+  border-color: #8320d9;
 }
 
-.btn.btn-secondary, 
-.btn.btn-primary{
+.btn.btn-secondary,
+.btn.btn-primary {
   color: #fff;
   font-family: "Exo 2", sans-serif;
-  background-color: #9318FF;
-  border-color: #8320D9;
+  background-color: #9318ff;
+  border-color: #8320d9;
   -webkit-box-shadow: none;
 }
 
@@ -204,16 +208,15 @@ a:hover {
 .btn.btn-primary.focus,
 .btn.btn-primary:focus {
   color: #fff;
-  background-color: #8320D9;
-  border-color: #8320D9;
-   
+  background-color: #8320d9;
+  border-color: #8320d9;
 }
 
 .btn.btn-secondary:hover,
 .btn.btn-primary:hover {
   color: #fff;
-  background-color: #8320D9;
-  border-color: #8320D9;
+  background-color: #8320d9;
+  border-color: #8320d9;
 }
 
 .btn.btn-secondary.active,
@@ -221,9 +224,8 @@ a:hover {
 .btn.btn-primary.active,
 .btn.btn-primary:active {
   color: #fff;
-  background-color: #8320D9;
-  border-color: #8320D9;
-  
+  background-color: #8320d9;
+  border-color: #8320d9;
 }
 
 .btn.btn-secondary.active.focus,
@@ -241,8 +243,8 @@ a:hover {
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-secondary:not(:disabled):not(.disabled):active:focus {
   color: #fff;
-  background-color: #8320D9;
-  border-color: #8320D9;
+  background-color: #8320d9;
+  border-color: #8320d9;
   outline: none;
   box-shadow: 0 0 0 0.2rem grey;
 }
@@ -284,60 +286,67 @@ a:hover {
 
 /*----------------------------Contact Form--------------------------*/
 * {
-	margin: 0px; 
-	padding: 0px; 
-	box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-body, html {
-	height: 100%;
-	font-family: Poppins-Regular, sans-serif;
+body,
+html {
+  height: 100%;
+  font-family: Poppins-Regular, sans-serif;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Poppins-Regular;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
 }
 
 a:focus {
-	outline: none !important;
+  outline: none !important;
 }
 
 a:hover {
-	text-decoration: none;
-	color: #57b846;
+  text-decoration: none;
+  color: #57b846;
 }
 
 /*---------------------------------------------*/
-h1,h2,h3,h4,h5,h6 {
-	margin: 0px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
 }
 
 p {
-	font-family: Poppins-Regular;
-	font-size: 14px;
-	line-height: 1.7;
-	color: #666666;
-	margin: 0px;
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
 }
 
-ul, li {
-	margin: 0px;
-	list-style-type: none;
+ul,
+li {
+  margin: 0px;
+  list-style-type: none;
 }
 
 /*---------------------------------------------*/
 input {
-	outline: none;
-	border: none;
+  outline: none;
+  border: none;
 }
 
 textarea {
@@ -345,24 +354,23 @@ textarea {
   border: none;
 }
 
-
 /*---------------------------------------------*/
 button {
-	outline: none !important;
-	border: none;
-	background: transparent;
+  outline: none !important;
+  border: none;
+  background: transparent;
 }
 
 button:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 iframe {
-	border: none !important;
+  border: none !important;
 }
 
 .container-contact2 {
-  width: 100%;  
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -433,10 +441,10 @@ iframe {
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 
-  background: -webkit-linear-gradient(45deg, #9318FF, #630BB0);
-  background: -o-linear-gradient(45deg, #9318FF, #630BB0);
-  background: -moz-linear-gradient(45deg, #9318FF, #630BB0);
-  background: linear-gradient(45deg, #9318FF, #630BB0);
+  background: -webkit-linear-gradient(45deg, #9318ff, #630bb0);
+  background: -o-linear-gradient(45deg, #9318ff, #630bb0);
+  background: -moz-linear-gradient(45deg, #9318ff, #630bb0);
+  background: linear-gradient(45deg, #9318ff, #630bb0);
 }
 
 .focus-input2::after {
@@ -521,11 +529,17 @@ textarea.input2 + .focus-input2::after {
   z-index: -1;
   width: 300%;
   height: 100%;
-  background: rgba(219,21,99,1);
-  background: -webkit-linear-gradient(-135deg, #9318FF, #630BB0, #9318FF, #630BB0);
-  background: -o-linear-gradient(-135deg, #9318FF, #630BB0, #9318FF, #630BB0);
-  background: -moz-linear-gradient(-135deg, #9318FF, #630BB0, #9318FF, #630BB0);
-  background: linear-gradient(-135deg, #9318FF, #630BB0, #9318FF, #630BB0);
+  background: rgba(219, 21, 99, 1);
+  background: -webkit-linear-gradient(
+    -135deg,
+    #9318ff,
+    #630bb0,
+    #9318ff,
+    #630bb0
+  );
+  background: -o-linear-gradient(-135deg, #9318ff, #630bb0, #9318ff, #630bb0);
+  background: -moz-linear-gradient(-135deg, #9318ff, #630bb0, #9318ff, #630bb0);
+  background: linear-gradient(-135deg, #9318ff, #630bb0, #9318ff, #630bb0);
   top: 0;
   left: -100%;
 
@@ -624,5 +638,4 @@ textarea.input2 + .focus-input2::after {
     visibility: visible;
     opacity: 1;
   }
-
 }
