@@ -13,6 +13,7 @@ window.addEventListener("load", () => {
   const diceSelectedDiv = document.getElementById("selected");
   const diceResultDiv = document.getElementById("results");
   const diceHistoryDiv = document.getElementById("historicRolls");
+  const dicePurposeDiv = document.getElementById("rollPurpose");
 
   let SelectedDice = [];
   let rolledNumbers = [];
@@ -61,7 +62,8 @@ window.addEventListener("load", () => {
         let rolledNumber = rolledNumbers[index];
         rolls = [...rolls, { dice: item, rolled: rolledNumber }];
       });
-      history = [...history, rolls];
+      let roll_data = { purpose: dicePurposeDiv.value, rolls: rolls };
+      history = [...history, roll_data];
     }
   };
 
@@ -69,17 +71,24 @@ window.addEventListener("load", () => {
     if (hasRolled) {
       diceHistoryDiv.innerHTML = "";
       history.forEach((round) => {
-        round
+        round.rolls
           .slice()
           .reverse()
           .forEach((roll) => {
             let div = document.createElement("div");
-            div.innerText = `Dice: ${roll.dice.value} - Rolled: ${roll.rolled}`;
+            div.innerText = `Dice: d${roll.dice.value} - Rolled: ${roll.rolled}`;
             diceHistoryDiv.prepend(div);
           });
+        rollReason(round.purpose);
         diceHistoryDiv.prepend(document.createElement("hr"));
       });
     }
+  };
+
+  rollReason = (purpose) => {
+    let rollingFor = document.createElement("div");
+    rollingFor.innerText = purpose;
+    diceHistoryDiv.prepend(rollingFor);
   };
 
   rollalldice = () => {
@@ -93,6 +102,7 @@ window.addEventListener("load", () => {
       rollingDiceSelected();
       saveHistory();
       renderHistory();
+      rollReason();
     }
   };
 
@@ -117,14 +127,4 @@ window.addEventListener("load", () => {
       }
     });
   });
-
-  let map;
-
-  function initMap() {
-    map = new google.maps.Map(document.getElementById("map"), {
-      center: { lat: -1, lng: 100 },
-      zoom: 8,
-    });
-  }
 });
-

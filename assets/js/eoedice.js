@@ -106,6 +106,7 @@ window.addEventListener("load", () => {
   const diceSelectedDiv = document.getElementById("selected");
   const diceResultDiv = document.getElementById("results");
   const diceHistoryDiv = document.getElementById("historicRolls");
+  
 
   let SelectedDice = [];
   let rolledNumbers = [];
