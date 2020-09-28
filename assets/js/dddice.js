@@ -22,8 +22,6 @@ window.addEventListener("load", () => {
 
   $("#results").hide();
   $("#rollPurpose").empty();
-  
-  diceHistoryDiv.innerHTML = `Historic Rolls`;
 
   allthedice.forEach((item) => {
     let dice = document.createElement("div");
@@ -106,7 +104,6 @@ window.addEventListener("load", () => {
       rollingDiceSelected();
       saveHistory();
       renderHistory();
-      rollReason();
     }
   };
 
