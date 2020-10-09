@@ -106,12 +106,29 @@ window.addEventListener("load", () => {
   const diceSelectedDiv = document.getElementById("selected");
   const diceResultDiv = document.getElementById("results");
   const diceHistoryDiv = document.getElementById("historicRolls");
-  
+  const dicePurposeDiv = document.getElementById("rollPurpose");
 
   let SelectedDice = [];
   let rolledNumbers = [];
   let history = [];
   let hasRolled = false;
+  
+
+  if ($(window).width() > 960){
+  $("#hideHistory").removeAttr('data-target');
+  $("#historicRolls").removeAttr('class');
+  };
+  
+  windowResize = () => {
+    if ($(window).width() > 960) {
+      $("#hideHistory").removeAttr('data-target');
+      $("#historicRolls").removeAttr('class');
+      }
+    else {
+      $("#hideHistory").attr('data-target', '#historicRolls');
+      $("#historicRolls").attr('class', 'collapse');
+    }
+  };
 
   $("#results").hide();
 
@@ -153,12 +170,10 @@ window.addEventListener("load", () => {
       let rolls = [];
       SelectedDice.forEach((item, index) => {
         let rolledNumber = rolledNumbers[index];
-        rolls = [
-          ...rolls,
-          { dice: item, rolled: item.results[rolledNumber].image },
-        ];
+        rolls = [...rolls, { dice: item, rolled: item.results[rolledNumber].image }];
       });
-      history = [...history, rolls];
+      let roll_data = { purpose: dicePurposeDiv.value, rolls: rolls };
+      history = [...history, roll_data];
     }
   };
 
@@ -166,7 +181,7 @@ window.addEventListener("load", () => {
     if (hasRolled) {
       diceHistoryDiv.innerHTML = "";
       history.forEach((round) => {
-        round
+        round.rolls
           .slice()
           .reverse()
           .forEach((roll) => {
@@ -175,11 +190,18 @@ window.addEventListener("load", () => {
             div.innerHTML = `<img src="${roll.rolled}"/>`;
             diceHistoryDiv.prepend(div);
           });
+        rollReason(round.purpose);
         diceHistoryDiv.prepend(document.createElement("hr"));
       });
     }
   };
 
+  rollReason = (purpose) => {
+    let rollingFor = document.createElement("div");
+    rollingFor.innerText = purpose;
+    diceHistoryDiv.prepend(rollingFor);
+  };
+  
   rollalldice = () => {
     if (SelectedDice == "") {
       hasrolled = false;
@@ -206,12 +228,5 @@ window.addEventListener("load", () => {
     $("#results").hide();
   });
 
-  let map;
-
-  function initMap() {
-    map = new google.maps.Map(document.getElementById("map"), {
-      center: { lat: -1, lng: 100 },
-      zoom: 8,
-    });
-  }
 });
+

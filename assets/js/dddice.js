@@ -21,7 +21,6 @@ window.addEventListener("load", () => {
   let hasRolled = false;
 
   $("#results").hide();
-  $("#rollPurpose").empty();
 
   allthedice.forEach((item) => {
     let dice = document.createElement("div");
@@ -92,7 +91,6 @@ window.addEventListener("load", () => {
     diceHistoryDiv.prepend(rollingFor);
   };
 
-
   rollalldice = () => {
     if (SelectedDice == "") {
       hasrolled = false;
@@ -117,15 +115,5 @@ window.addEventListener("load", () => {
     $("#selected").empty();
     $("#results").empty();
     $("#results").hide();
-  });
-
-  $(".input2").each(function () {
-    $(this).on("blur", function () {
-      if ($(this).val().trim() != "") {
-        $(this).addClass("has-val");
-      } else {
-        $(this).removeClass("has-val");
-      }
-    });
   });
 });

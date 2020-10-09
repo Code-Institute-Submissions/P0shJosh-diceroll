@@ -47,7 +47,12 @@
       media="all"
       href="assets/css/960.css"
     />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
     <script src="./assets/js/eoedice.js"></script>
     <script src="./assets/js/contact.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -62,43 +67,57 @@
         emailjs.init("user_8R2Nf0xGDOk5V837V47Uc");
       })();
     </script>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <title>Star Wars FFG</title>
   </head>
 
-  <body>
+  <body onresize="windowResize()">
     <!--Navbar-->
     <header></header>
 
     <div class="row maincontent">
       <!--Previous Rolls Section-->
-      <div class="col-md-4">
-        <div id="historicRolls"></div>
-      </div>
+     
+      
+            <div class="col-md-4">
+              <button id="hideHistory" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#historicRolls" aria-expanded="false" aria-controls="historicRolls">
+                Button with data-target
+              </button>
+                <div class="collapse" id="historicRolls"></div>
+            </div>
+        
 
       <!--Dice Roller Section-->
       <div class="col-md-8 maincontent">
         <div class="row">
-          <div class="col-md-8 dicebox">
+          <div class="col-md-8 dicebox" >
             <div id="allthedice" class="ffgdice"></div>
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-8 dicebox">
-            <div id="selected"></div>
+            <div id="selected" class="ffgselected"></div>
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-8 dicebox">
-            <div id="results"></div>
+            <div id="results" class="ffgresults"></div>
           </div>
         </div>
 
+        <!-- Roll Purpose Input Box -->
+        <div class="row rollingPurpose">
+          <label for="fname">What's this roll for?</label><br />
+        </div>
+        <div class="row rollingPurpose">
+          <input type="text" id="rollPurpose" name="rollPurpose" /><br />
+        </div>
+
+        <!-- Buttons -->
         <div class="row">
           <div class="col-md-4 dicebutton">
             <button
@@ -118,7 +137,6 @@
             >
               Clear Dice Pool
             </button>
-
           </div>
         </div>
       </div>
@@ -143,7 +161,6 @@
                 <form
                   class="contact2-form validate-form modal-text"
                   id="contactForm"
-                  
                   method="post"
                 >
                   <span class="contact2-form-title"> Contact Us </span>
@@ -152,7 +169,7 @@
                     data-validate="Name
                     is required"
                   >
-                    <input class="input2" type="text" name="name"  />
+                    <input class="input2" type="text" name="name" />
                     <span class="focus-input2" data-placeholder="NAME"></span>
                   </div>
                   <div
