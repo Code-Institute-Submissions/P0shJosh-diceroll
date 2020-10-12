@@ -162,13 +162,37 @@ a:hover {
   max-height: 89vh;
   overflow-y: auto;
 }
+
 #hideHistory {
   display: none;
 }
 
 @media only screen and (max-width: 960px) {
-    #hideHistory {
-      display: block;
+  #historicRolls {
+    z-index: 2;
+    position: absolute;
+    background-color: white;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 70%;
+  }
+
+  #hideHistory  {
+    position: absolute;
+    display: block;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 70%;
+    z-index: 2;
+    }
+
+    .ffgdice, .ffgselected, .ffgresults {
+      z-index: 1;
+      position: fixed;
     }
 }
 
