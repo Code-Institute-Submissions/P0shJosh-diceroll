@@ -162,6 +162,7 @@ a:hover {
 #historicRolls {
   max-height: 89vh;
   overflow-y: auto;
+  font-family: "Roboto Mono", monospace;
 }
 
 #hideHistory {
@@ -214,7 +215,7 @@ a:hover {
   #historicRolls {
     z-index: 2;
     position: absolute;
-    background-color: rgb(255, 247, 221);
+    background-color: rgb(255, 248, 230);
     border: 2px dotted black;
     left: 0; 
     right: 0; 
