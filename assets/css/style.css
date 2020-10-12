@@ -1,7 +1,7 @@
 /*--------------------------------------- Body --------------------------------------- */
 
 body {
-  background-color: rgb(255, 248, 220);
+  background-color: rgb(255, 247, 221);
   overflow-x: hidden;
 }
 
@@ -10,8 +10,8 @@ body {
 .wrap-contact2,
 .modal-content,
 .container-contact2 {
-  background-color: rgb(255, 248, 220);
-  color: rgb(255, 248, 220);
+  background-color: rgb(255, 247, 221);
+  color: rgb(255, 247, 221);
 }
 
 /*--------------------------------------- Index Page --------------------------------------- */
@@ -126,7 +126,7 @@ a:hover {
 /*--------------------------------------- D&D Dice Roller --------------------------------------- */
 .col-md-4
  {
-  border: 2px solid black;
+  border: 3px dotted black;
 }
 
 .maincontent {
@@ -135,7 +135,7 @@ a:hover {
 
 .dicebox,
 .dicebutton {
-  border: 2px solid black;
+  border: 3px dotted black;
   min-height: 11vh;
   margin-top: 5vh;
   margin-bottom: 5vh;
@@ -146,6 +146,7 @@ a:hover {
 .dicebutton {
   min-height: 5vh;
   border: 0px;
+  
 }
 
 #allthedice,
@@ -165,35 +166,6 @@ a:hover {
 
 #hideHistory {
   display: none;
-}
-
-@media only screen and (max-width: 960px) {
-  #historicRolls {
-    z-index: 2;
-    position: absolute;
-    background-color: white;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
-    width: 70%;
-  }
-
-  #hideHistory  {
-    position: absolute;
-    display: block;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
-    width: 70%;
-    z-index: 2;
-    }
-
-    .ffgdice, .ffgselected, .ffgresults {
-      z-index: 1;
-      position: fixed;
-    }
 }
 
 #allthedice img,
@@ -227,17 +199,92 @@ a:hover {
   margin-left: 2em;
 }
 
+#restart, #roller {
+  background: -webkit-linear-gradient(-135deg, rgb(224, 231, 255), rgb(230, 221, 255), rgb(224, 231, 255), rgb(230, 221, 255));
+  background: -o-linear-gradient(-135deg, rgb(224, 231, 255), rgb(230, 221, 255), rgb(224, 231, 255), rgb(230, 221, 255));
+  background: -moz-linear-gradient(-135deg, rgb(224, 231, 255), rgb(230, 221, 255), rgb(224, 231, 255), rgb(230, 221, 255));
+  background: linear-gradient(-135deg, rgb(224, 231, 255), rgb(230, 221, 255), rgb(224, 231, 255), rgb(230, 221, 255));
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+@media only screen and (max-width: 960px) {
+  #historicRolls {
+    z-index: 2;
+    position: absolute;
+    background-color: rgb(255, 247, 221);
+    border: 2px dotted black;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 75%;
+  }
+
+  #hideHistory  {
+    position: absolute;
+    display: block;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 75%;
+    z-index: 2;
+  }
+
+  .dicebox {
+    width: 80%;
+    margin-bottom: 0em;
+    min-height: 100px;
+  }
+
+  .ffgdice, .ffgselected, .ffgresults {
+    z-index: 1;
+    position: fixed;
+  }
+
+  .chooseDice {
+    margin-top: 8vh;
+  }
+
+  .dicebutton {
+    width: 70%;
+  }
+  
+  #allthedice div,
+  #selected div {
+    height: auto;
+    width: 4em;
+  }
+
+  #allthedice img,
+  #selected img {
+    transform: scale(0.6) translateX(-5vw);
+    padding: 0px;
+  }
+
+  #results div {
+    width: 1.97em;
+  }
+
+  #restart {
+    margin-bottom: 30px;
+  }
+}
+
 .button {
   min-height: 5vh;
-  border-color: #8320d9;
+  border-color: rgb(230, 221, 255);
 }
 
 .btn.btn-secondary,
 .btn.btn-primary {
-  color: #fff;
+  color: black;
   font-family: "Exo 2", sans-serif;
-  background-color: #9318ff;
-  border-color: #8320d9;
+  background-color: rgb(221, 229, 255);
+  border-color: rgb(230, 221, 255);
   -webkit-box-shadow: none;
 }
 
@@ -245,25 +292,25 @@ a:hover {
 .btn.btn-secondary:focus,
 .btn.btn-primary.focus,
 .btn.btn-primary:focus {
-  color: #fff;
-  background-color: #8320d9;
-  border-color: #8320d9;
+  color: black;
+  background-color: rgb(221, 229, 255);
+  border-color: rgb(230, 221, 255);
 }
 
 .btn.btn-secondary:hover,
 .btn.btn-primary:hover {
-  color: #fff;
-  background-color: #8320d9;
-  border-color: #8320d9;
+  color: black;
+  background-color: rgb(221, 229, 255);
+  border-color: rgb(230, 221, 255);
 }
 
 .btn.btn-secondary.active,
 .btn.btn-secondary:active,
 .btn.btn-primary.active,
 .btn.btn-primary:active {
-  color: #fff;
-  background-color: #8320d9;
-  border-color: #8320d9;
+  color: black;
+  background-color: rgb(230, 221, 255);
+  border-color: rgb(230, 221, 255);
 }
 
 .btn.btn-secondary.active.focus,
@@ -281,8 +328,8 @@ a:hover {
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-secondary:not(:disabled):not(.disabled):active:focus {
   color: #fff;
-  background-color: #8320d9;
-  border-color: #8320d9;
+  background-color: rgb(230, 221, 255);
+  border-color: rgb(224, 231, 255);
   outline: none;
   box-shadow: 0 0 0 0.2rem grey;
 }
@@ -361,7 +408,7 @@ a:focus {
 
 a:hover {
   text-decoration: none;
-  color: #57b846;
+  color: rgb(224, 231, 255);
 }
 
 /*---------------------------------------------*/
@@ -457,7 +504,7 @@ iframe {
 .input2 {
   display: block;
   width: 100%;
-  background: rgb(255, 248, 220);
+  background: rgb(255, 247, 221);
   font-size: 15px;
   color: #555555;
   line-height: 1.2;
@@ -486,10 +533,10 @@ iframe {
   -moz-transition: all 0.4s;
   transition: all 0.4s;
   background: rgba(219,21,99,1);
-  background: -webkit-linear-gradient(45deg, #9318ff, #630bb0);
-  background: -o-linear-gradient(45deg, #9318ff, #630bb0);
-  background: -moz-linear-gradient(45deg, #9318ff, #630bb0);
-  background: linear-gradient(45deg, #9318ff, #630bb0);
+  background: -webkit-linear-gradient(45deg, rgb(224, 231, 255), rgb(230, 221, 255));
+  background: -o-linear-gradient(45deg, rgb(224, 231, 255), rgb(230, 221, 255));
+  background: -moz-linear-gradient(45deg, rgb(224, 231, 255), rgb(230, 221, 255));
+  background: linear-gradient(45deg, rgb(224, 231, 255), rgb(230, 221, 255));
 }
 
 .focus-input2::after {
@@ -499,7 +546,7 @@ iframe {
   position: absolute;
   top: 0px;
   left: 0;
-  background: rgb(255, 248, 220);
+  background: rgb(255, 247, 221);
   font-family: Poppins-Regular;
   font-size: 13px;
   color: #999999;
@@ -575,10 +622,10 @@ textarea.input2 + .focus-input2::after {
   width: 300%;
   height: 100%;
   background: rgba(219, 21, 99, 1);
-  background: -webkit-linear-gradient(-135deg, #9318ff, #630bb0, #9318ff, #630bb0);
-  background: -o-linear-gradient(-135deg, #9318ff, #630bb0, #9318ff, #630bb0);
-  background: -moz-linear-gradient(-135deg, #9318ff, #630bb0, #9318ff, #630bb0);
-  background: linear-gradient(-135deg, #9318ff, #630bb0, #9318ff, #630bb0);
+  background: -webkit-linear-gradient(-135deg, rgb(224, 231, 255), rgb(230, 221, 255), rgb(224, 231, 255), rgb(230, 221, 255));
+  background: -o-linear-gradient(-135deg, rgb(224, 231, 255), rgb(230, 221, 255), rgb(224, 231, 255), rgb(230, 221, 255));
+  background: -moz-linear-gradient(-135deg, rgb(224, 231, 255), rgb(230, 221, 255), rgb(224, 231, 255), rgb(230, 221, 255));
+  background: linear-gradient(-135deg, rgb(224, 231, 255), rgb(230, 221, 255), rgb(224, 231, 255), rgb(230, 221, 255));
   top: 0;
   left: -100%;
 
@@ -600,7 +647,7 @@ textarea.input2 + .focus-input2::after {
   min-width: 244px;
   height: 50px;
   font-size: 16px;
-  color: #fff;
+  color: black;
   line-height: 1.2;
 }
 
@@ -629,7 +676,7 @@ textarea.input2 + .focus-input2::after {
   position: absolute;
   max-width: 70%;
   background-color: white;
-  border: 1px solid #9318ff;
+  border: 1px solid rgb(221, 229, 255);
   border-radius: 2px;
   padding: 4px 25px 4px 10px;
   top: 50%;
@@ -640,7 +687,7 @@ textarea.input2 + .focus-input2::after {
   transform: translateY(-50%);
   right: 0px;
   pointer-events: none;
-  color: #9318ff;
+  color: rgb(224, 231, 255);
   font-size: 13px;
   line-height: 1.4;
   text-align: left;
@@ -658,7 +705,7 @@ textarea.input2 + .focus-input2::after {
   font-family: FontAwesome;
   display: block;
   position: absolute;
-  color: #9318ff;
+  color: rgb(221, 229, 255);
   font-size: 16px;
   top: 50%;
   -webkit-transform: translateY(-50%);

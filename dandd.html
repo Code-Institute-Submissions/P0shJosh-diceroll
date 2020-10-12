@@ -69,39 +69,48 @@
     <title>Dungeons and Dragons</title>
   </head>
 
-  <body>
+  <body onresize="windowResize()">
     <!--Navbar-->
     <header></header>
 
     <div class="row maincontent">
       <!--Previous Rolls Section-->
-      <div class="col-md-4">
-        <div id="historicRolls"></div>
+      <div id="history" class="col-md-4">
+        <div id="historicRolls" class="collapse"></div>
+        <button id="hideHistory" class="btn btn-primary" type="button"  data-toggle="collapse" data-target="#historicRolls" aria-expanded="false" aria-controls="historicRolls">
+        Past Rolls
+        </button>
       </div>
-
+        
       <!--Dice Roller Section-->
       <div class="col-md-8 maincontent">
         <div class="row">
-          <div class="col-md-8 dicebox">
+          <div class="col-md-8 dicebox chooseDice" >
             <div id="allthedice" class="ffgdice"></div>
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-8 dicebox">
-            <div id="selected"></div>
+            <div id="selected" class="ffgselected"></div>
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-8 dicebox">
-            <div id="results"></div>
+            <div id="results" class="ffgresults"></div>
           </div>
         </div>
 
-          <label for="fname">Rolling for:</label><br>
-          <input type="text" id="rollPurpose" name="rollPurpose"><br>
-    
+        <!-- Roll Purpose Input Box -->
+        <div class="row rollingPurpose">
+          <label for="fname">What's this roll for?</label><br />
+        </div>
+        <div class="row rollingPurpose">
+          <input type="text" id="rollPurpose" name="rollPurpose" /><br />
+        </div>
+
+        <!-- Buttons -->
         <div class="row">
           <div class="col-md-4 dicebutton">
             <button
@@ -112,6 +121,7 @@
             >
               Roll the Dice
             </button>
+
             <button
               id="restart"
               onclick="removeDice()"
@@ -144,7 +154,6 @@
                 <form
                   class="contact2-form validate-form modal-text"
                   id="contactForm"
-                  
                   method="post"
                 >
                   <span class="contact2-form-title"> Contact Us </span>
@@ -153,7 +162,7 @@
                     data-validate="Name
                     is required"
                   >
-                    <input class="input2" type="text" name="name"  />
+                    <input class="input2" type="text" name="name" />
                     <span class="focus-input2" data-placeholder="NAME"></span>
                   </div>
                   <div
@@ -315,24 +324,27 @@
           type="button"
           class="btn btn-primary"
           data-toggle="modal"
-          data-target="#contactModal"
-        >
+          data-target="#contactModal">
           Contact
         </button>
         <button
           type="button"
           class="btn btn-primary"
           data-toggle="modal"
-          data-target="#whereModal"
-        >
+          data-target="#whereModal">
           Where to Play
         </button>
+        <a 
+          class="btn btn-primary" 
+          href="starwars.html" 
+          role="button">
+          Switch Game?
+        </a>
         <button
           type="button"
           class="btn btn-primary"
           data-toggle="modal"
-          data-target="#howModal"
-        >
+          data-target="#howModal">
           How to Use
         </button>
       </div>

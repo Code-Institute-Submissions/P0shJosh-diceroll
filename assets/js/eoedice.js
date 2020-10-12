@@ -116,7 +116,8 @@ window.addEventListener("load", () => {
 
   if ($(window).width() > 960){
     $("#hideHistory").removeAttr('data-target');
-    $("#historicRolls").removeAttr('class');
+    $("#historicRolls").removeAttr('class')
+    $("#history").attr('class', 'col-md-4');
   };
   
   if ($(window).width() < 960){
@@ -126,12 +127,13 @@ window.addEventListener("load", () => {
   windowResize = () => {
     if ($(window).width() > 960) {
       $("#hideHistory").removeAttr('data-target');
-      $("#historicRolls").removeAttr('class');
-      
+      $("#historicRolls").removeAttr('class')
+      $("#history").attr('class', 'col-md-4');
       }
     else {
       $("#hideHistory").attr('data-target', '#historicRolls');
       $("#historicRolls").attr('class', 'collapse');
+      $("#history").removeAttr('class')
       ;
     }
   };

@@ -67,7 +67,7 @@
         emailjs.init("user_8R2Nf0xGDOk5V837V47Uc");
       })();
     </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <title>Star Wars FFG</title>
@@ -89,7 +89,7 @@
       <!--Dice Roller Section-->
       <div class="col-md-8 maincontent">
         <div class="row">
-          <div class="col-md-8 dicebox" >
+          <div class="col-md-8 dicebox chooseDice" >
             <div id="allthedice" class="ffgdice"></div>
           </div>
         </div>
@@ -328,24 +328,27 @@
           type="button"
           class="btn btn-primary"
           data-toggle="modal"
-          data-target="#contactModal"
-        >
+          data-target="#contactModal">
           Contact
         </button>
         <button
           type="button"
           class="btn btn-primary"
           data-toggle="modal"
-          data-target="#whereModal"
-        >
+          data-target="#whereModal">
           Where to Play
         </button>
+        <a 
+          class="btn btn-primary" 
+          href="dandd.html" 
+          role="button">
+          Switch Game?
+        </a>
         <button
           type="button"
           class="btn btn-primary"
           data-toggle="modal"
-          data-target="#howModal"
-        >
+          data-target="#howModal">
           How to Use
         </button>
       </div>

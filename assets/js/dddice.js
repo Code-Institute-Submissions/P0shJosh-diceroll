@@ -20,6 +20,30 @@ window.addEventListener("load", () => {
   let history = [];
   let hasRolled = false;
 
+  if ($(window).width() > 960){
+    $("#hideHistory").removeAttr('data-target');
+    $("#historicRolls").removeAttr('class')
+    $("#history").attr('class', 'col-md-4');
+  };
+  
+  if ($(window).width() < 960){
+    $("#history").removeAttr('class');
+  }
+
+  windowResize = () => {
+    if ($(window).width() > 960) {
+      $("#hideHistory").removeAttr('data-target');
+      $("#historicRolls").removeAttr('class')
+      $("#history").attr('class', 'col-md-4');
+      }
+    else {
+      $("#hideHistory").attr('data-target', '#historicRolls');
+      $("#historicRolls").attr('class', 'collapse');
+      $("#history").removeAttr('class')
+      ;
+    }
+  };
+  
   $("#results").hide();
 
   allthedice.forEach((item) => {
