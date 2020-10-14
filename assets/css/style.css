@@ -211,6 +211,7 @@ a:hover {
   transition: all 0.4s;
 }
 
+
 @media only screen and (max-width: 960px) {
   #historicRolls {
     z-index: 2;
@@ -361,6 +362,7 @@ a:hover {
   justify-content: center;
   font-family: "Roboto Mono", monospace;
 }
+
 /*--------------------------------------- Modal Boxes --------------------------------------- */
 #modalBox {
   position: absolute;
