@@ -90,7 +90,7 @@ a:hover {
 @media only screen and (max-width: 960px) {
   .diceroll-logo img {
     width: 100vw;
-    transform: translateY(-80%);
+    transform: translateY(-30%);
   }
 
   .diceroll-logo {
@@ -187,7 +187,6 @@ a:hover {
 .dicebutton {
   min-height: 5vh;
   border: 0px;
-  
 }
 
 #allthedice,
@@ -251,7 +250,6 @@ a:hover {
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
-
 
 @media only screen and (max-width: 960px) {
   #historicRolls {
@@ -402,6 +400,65 @@ a:hover {
   position: relative;
   justify-content: center;
   font-family: "Roboto Mono", monospace;
+}
+
+@media only screen and (max-height: 800px) {
+  #allthedice img,
+  #selected img {
+    height: 130%;
+    width: auto;
+    padding: 0px;
+ }
+
+ #allthedice div, 
+ #selected div {
+   height: 40%;
+   width: 20%;
+ }
+
+ .chooseDice, .ffgdice {
+   height: 150px;
+   max-height: 150px;
+ }
+
+ #selected div {
+   width: 55px;
+   height: 60px;
+   margin-bottom: 0.5em;
+ }
+
+ #roller {
+  margin-top: -15px;
+  margin-bottom: 20px;
+  width: 35vw;
+  margin-left: 10vw;;
+  margin-right: 5vw;
+  height: 2.5em;
+}
+
+#restart {
+  margin-top: -15px;
+  margin-bottom: 20px;
+  width: 35vw;
+  margin-left: 5vw;
+  margin-right: 10vw;
+  height: 2.5em;
+  padding: 8px 8px;
+}
+
+.btn.btn-primary {
+  padding: 2px 4px;
+}
+
+.btn.btn-secondary {
+  font-size: 15px; 
+}
+
+.navbar .btn{
+  width: 20vw;
+  font-size: 0.7em;
+  height: 3.25em;
+  }
 }
 
 /*--------------------------------------- Modal Boxes --------------------------------------- */
