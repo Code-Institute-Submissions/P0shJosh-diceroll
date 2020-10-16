@@ -230,7 +230,6 @@ a:hover {
 
 #results img {
   width: 2em;
-  border: 2px solid black;
 }
 
 #historicRolls img {
@@ -302,16 +301,16 @@ a:hover {
     width: 4em;
   }
 
+  #results div {
+    width: 1.9em;
+  }
+
   #allthedice img,
   #selected img {
     transform: scale(0.6) translateX(-5vw);
     padding: 0px;
   }
-
-  #results div {
-    width: 1.97em;
-  }
-
+ 
   #roller {
     margin-bottom: 30px;
     width: 35vw;
@@ -425,6 +424,10 @@ a:hover {
    width: 55px;
    height: 60px;
    margin-bottom: 0.5em;
+ }
+ 
+ #results div {
+  width: 1.7em;
  }
 
  #roller {
