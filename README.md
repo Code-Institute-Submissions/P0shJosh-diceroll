@@ -1,4 +1,4 @@
-# [MS1-thekernelbrewery](https://p0shjosh.github.io/MS1-thekernelbrewery/)
+# [MS2 - DiceRoll](https://p0shjosh.github.io/diceroll/index.html)
 
 - [Introduction](#introduction)
 - [UX](#ux)
