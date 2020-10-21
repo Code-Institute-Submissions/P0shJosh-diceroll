@@ -87,35 +87,6 @@ a:hover {
   transform: scale(1.1);
 }
 
-@media only screen and (max-width: 960px) {
-  .diceroll-logo img {
-    width: 100vw;
-    transform: translateY(-30%);
-  }
-
-  .diceroll-logo {
-    position: absolute;
-  }
- .gamelinks .row{
-   position: relative;
-   display: flex;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   justify-content: center;
- }
- .col-sm {
-   width: 20em;
-   margin: 0 1em 0 1em;
- }
-  .centerbox {
-    display: none;
-  }
-  .gamelinks h2 {
-    font-weight: 500;
-    font-size: 150%;
-  }
-}
-
 /*--------------------------------------- Footer --------------------------------------- */
 .navbar {
   overflow: hidden;
@@ -165,8 +136,7 @@ a:hover {
 }
 
 /*--------------------------------------- D&D Dice Roller --------------------------------------- */
-.col-md-4
- {
+.col-md-4 {
   border: 3px dotted black;
 }
 
@@ -215,7 +185,9 @@ a:hover {
   width: 6em;
 }
 
-.ffgdice img, .ffgselected img, .ffgresults img {
+.ffgdice img,
+.ffgselected img,
+.ffgresults img {
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
@@ -239,37 +211,62 @@ a:hover {
   margin-left: 2em;
 }
 
-#restart, #roller {
-  background: -webkit-linear-gradient(-135deg, rgb(224, 231, 255), rgb(230, 221, 255), rgb(224, 231, 255), rgb(230, 221, 255));
-  background: -o-linear-gradient(-135deg, rgb(224, 231, 255), rgb(230, 221, 255), rgb(224, 231, 255), rgb(230, 221, 255));
-  background: -moz-linear-gradient(-135deg, rgb(224, 231, 255), rgb(230, 221, 255), rgb(224, 231, 255), rgb(230, 221, 255));
-  background: linear-gradient(-135deg, rgb(224, 231, 255), rgb(230, 221, 255), rgb(224, 231, 255), rgb(230, 221, 255));
+#restart,
+#roller {
+  background: -webkit-linear-gradient(
+    -135deg,
+    rgb(224, 231, 255),
+    rgb(230, 221, 255),
+    rgb(224, 231, 255),
+    rgb(230, 221, 255)
+  );
+  background: -o-linear-gradient(
+    -135deg,
+    rgb(224, 231, 255),
+    rgb(230, 221, 255),
+    rgb(224, 231, 255),
+    rgb(230, 221, 255)
+  );
+  background: -moz-linear-gradient(
+    -135deg,
+    rgb(224, 231, 255),
+    rgb(230, 221, 255),
+    rgb(224, 231, 255),
+    rgb(230, 221, 255)
+  );
+  background: linear-gradient(
+    -135deg,
+    rgb(224, 231, 255),
+    rgb(230, 221, 255),
+    rgb(224, 231, 255),
+    rgb(230, 221, 255)
+  );
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 760px) {
   #historicRolls {
     z-index: 2;
     position: absolute;
     background-color: rgb(255, 248, 230);
     border: 2px dotted black;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 75%;
   }
 
-  #hideHistory  {
+  #hideHistory {
     position: absolute;
     display: block;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 75%;
     z-index: 2;
   }
@@ -280,7 +277,9 @@ a:hover {
     min-height: 100px;
   }
 
-  .ffgdice, .ffgselected, .ffgresults {
+  .ffgdice,
+  .ffgselected,
+  .ffgresults {
     z-index: 1;
     position: fixed;
   }
@@ -294,7 +293,7 @@ a:hover {
     display: flex;
     flex-direction: row;
   }
-  
+
   #allthedice div,
   #selected div {
     height: auto;
@@ -310,11 +309,11 @@ a:hover {
     transform: scale(0.6) translateX(-5vw);
     padding: 0px;
   }
- 
+
   #roller {
     margin-bottom: 30px;
     width: 35vw;
-    margin-left: 10vw;;
+    margin-left: 10vw;
     margin-right: 5vw;
     height: 4em;
   }
@@ -328,10 +327,63 @@ a:hover {
     height: 4em;
   }
 
-  .navbar .btn{
+  .navbar .btn {
     width: 20vw;
     font-size: 0.7em;
     height: 4em;
+  }
+}
+
+@media only screen and (min-width: 761px) and (max-width: 1023px) {
+  .col-md-4,
+  .col-md-8 {
+    max-height: 90vh;
+    max-width: 100%;
+    padding: 0px;
+  }
+
+  .dicebox {
+    margin-bottom: -0.5em;
+  }
+
+  .maincontent label {
+    margin-top: 1rem;
+  }
+
+  #rollpurpose {
+    margin-top: 1em;
+  }
+
+  .dicebutton {
+    display: flex;
+    flex-direction: row;
+  }
+  #roller {
+    margin-top: -15px;
+    margin-bottom: 20px;
+    width: 20vw;
+    margin-left: 10vw;
+    margin-right: 5vw;
+    height: 4em;
+  }
+
+  #restart {
+    margin-top: -15px;
+    margin-bottom: 20px;
+    width: 20vw;
+    margin-left: 5vw;
+    margin-right: 10vw;
+    height: 4em;
+    padding: 8px 8px;
+  }
+
+  #allthedice div,
+  #selected div,
+  #results div {
+    height: 45%;
+    width: 25%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
   }
 }
 
@@ -395,7 +447,7 @@ a:hover {
   box-shadow: 0 0 0 0.2rem grey;
 }
 
-.rollingPurpose{
+.rollingPurpose {
   position: relative;
   justify-content: center;
   font-family: "Roboto Mono", monospace;
@@ -407,60 +459,61 @@ a:hover {
     height: 130%;
     width: auto;
     padding: 0px;
- }
+  }
 
- #allthedice div, 
- #selected div {
-   height: 40%;
-   width: 20%;
- }
+  #allthedice div,
+  #selected div {
+    height: 40%;
+    width: 20%;
+  }
 
- .chooseDice, .ffgdice {
-   height: 150px;
-   max-height: 150px;
- }
+  .chooseDice,
+  .ffgdice {
+    height: 150px;
+    max-height: 150px;
+  }
 
- #selected div {
-   width: 55px;
-   height: 60px;
-   margin-bottom: 0.5em;
- }
- 
- #results div {
-  width: 1.7em;
- }
+  #selected div {
+    width: 55px;
+    height: 60px;
+    margin-bottom: 0.5em;
+  }
 
- #roller {
-  margin-top: -15px;
-  margin-bottom: 20px;
-  width: 35vw;
-  margin-left: 10vw;;
-  margin-right: 5vw;
-  height: 2.5em;
-}
+  #results div {
+    width: 1.7em;
+  }
 
-#restart {
-  margin-top: -15px;
-  margin-bottom: 20px;
-  width: 35vw;
-  margin-left: 5vw;
-  margin-right: 10vw;
-  height: 2.5em;
-  padding: 8px 8px;
-}
+  #roller {
+    margin-top: -15px;
+    margin-bottom: 20px;
+    width: 35vw;
+    margin-left: 10vw;
+    margin-right: 5vw;
+    height: 2.5em;
+  }
 
-.btn.btn-primary {
-  padding: 2px 4px;
-}
+  #restart {
+    margin-top: -15px;
+    margin-bottom: 20px;
+    width: 35vw;
+    margin-left: 5vw;
+    margin-right: 10vw;
+    height: 2.5em;
+    padding: 8px 8px;
+  }
 
-.btn.btn-secondary {
-  font-size: 15px; 
-}
+  .btn.btn-primary {
+    padding: 2px 4px;
+  }
 
-.navbar .btn{
-  width: 20vw;
-  font-size: 0.7em;
-  height: 3.25em;
+  .btn.btn-secondary {
+    font-size: 15px;
+  }
+
+  .navbar .btn {
+    width: 20vw;
+    font-size: 0.7em;
+    height: 3.25em;
   }
 }
 
@@ -635,10 +688,18 @@ iframe {
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
-  background: rgba(219,21,99,1);
-  background: -webkit-linear-gradient(45deg, rgb(224, 231, 255), rgb(230, 221, 255));
+  background: rgba(219, 21, 99, 1);
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(224, 231, 255),
+    rgb(230, 221, 255)
+  );
   background: -o-linear-gradient(45deg, rgb(224, 231, 255), rgb(230, 221, 255));
-  background: -moz-linear-gradient(45deg, rgb(224, 231, 255), rgb(230, 221, 255));
+  background: -moz-linear-gradient(
+    45deg,
+    rgb(224, 231, 255),
+    rgb(230, 221, 255)
+  );
   background: linear-gradient(45deg, rgb(224, 231, 255), rgb(230, 221, 255));
 }
 
@@ -725,10 +786,34 @@ textarea.input2 + .focus-input2::after {
   width: 300%;
   height: 100%;
   background: rgba(219, 21, 99, 1);
-  background: -webkit-linear-gradient(-135deg, rgb(224, 231, 255), rgb(230, 221, 255), rgb(224, 231, 255), rgb(230, 221, 255));
-  background: -o-linear-gradient(-135deg, rgb(224, 231, 255), rgb(230, 221, 255), rgb(224, 231, 255), rgb(230, 221, 255));
-  background: -moz-linear-gradient(-135deg, rgb(224, 231, 255), rgb(230, 221, 255), rgb(224, 231, 255), rgb(230, 221, 255));
-  background: linear-gradient(-135deg, rgb(224, 231, 255), rgb(230, 221, 255), rgb(224, 231, 255), rgb(230, 221, 255));
+  background: -webkit-linear-gradient(
+    -135deg,
+    rgb(224, 231, 255),
+    rgb(230, 221, 255),
+    rgb(224, 231, 255),
+    rgb(230, 221, 255)
+  );
+  background: -o-linear-gradient(
+    -135deg,
+    rgb(224, 231, 255),
+    rgb(230, 221, 255),
+    rgb(224, 231, 255),
+    rgb(230, 221, 255)
+  );
+  background: -moz-linear-gradient(
+    -135deg,
+    rgb(224, 231, 255),
+    rgb(230, 221, 255),
+    rgb(224, 231, 255),
+    rgb(230, 221, 255)
+  );
+  background: linear-gradient(
+    -135deg,
+    rgb(224, 231, 255),
+    rgb(230, 221, 255),
+    rgb(224, 231, 255),
+    rgb(230, 221, 255)
+  );
   top: 0;
   left: -100%;
 
@@ -756,15 +841,6 @@ textarea.input2 + .focus-input2::after {
 
 .wrap-contact2-form-btn:hover .contact2-form-bgbtn {
   left: 0;
-}
-
-/*------------------------------------------------------------------
-[ Responsive ]*/
-
-@media (max-width: 576px) {
-  .wrap-contact2 {
-    padding: 72px 15px 90px 15px;
-  }
 }
 
 /*------------------------------------------------------------------
@@ -823,6 +899,64 @@ textarea.input2 + .focus-input2::after {
 .alert-validate:hover:before {
   visibility: visible;
   opacity: 1;
+}
+
+@media only screen and (max-width: 960px) {
+  .diceroll-logo img {
+    width: 100vw;
+    transform: translateY(-30%);
+  }
+
+  .diceroll-logo {
+    position: absolute;
+  }
+  .gamelinks .row {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .col-sm {
+    width: 20em;
+    margin: 0 1em 0 1em;
+  }
+  .centerbox {
+    display: none;
+  }
+  .gamelinks h2 {
+    font-weight: 500;
+    font-size: 150%;
+  }
+}
+@media only screen and (max-height: 800px) {
+  #contactModal {
+    height: 100%;
+  }
+  #contactForm {
+    height: 55vh;
+  }
+  .wrap-contact2 {
+    padding: 20px 15px 110px 15px;
+  }
+  .contact2-form-title {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .wrap-contact2 {
+    padding: 20px 15px 110px 15px;
+  }
+  #modalBox {
+    width: 90%;
+    height: 90vh;
+  }
+  #map {
+    height: 65vh;
+  }
+  .modal-text {
+    font-weight: 600;
+    font-size: 100%;
+  }
 }
 
 @media (max-width: 992px) {

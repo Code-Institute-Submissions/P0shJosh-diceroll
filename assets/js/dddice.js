@@ -20,18 +20,18 @@ window.addEventListener("load", () => {
   let history = [];
   let hasRolled = false;
 
-  if ($(window).width() > 960){
+  if ($(window).width() > 760){
     $("#hideHistory").removeAttr('data-target');
     $("#historicRolls").removeAttr('class')
     $("#history").attr('class', 'col-md-4');
   };
   
-  if ($(window).width() < 960){
+  if ($(window).width() < 760){
     $("#history").removeAttr('class');
   }
 
   windowResize = () => {
-    if ($(window).width() > 960) {
+    if ($(window).width() > 760) {
       $("#hideHistory").removeAttr('data-target');
       $("#historicRolls").removeAttr('class')
       $("#history").attr('class', 'col-md-4');
