@@ -1,5 +1,8 @@
 window.addEventListener("load", () => {
-    
+/* 
+Code all based on examples from emailjs.send
+*/
+
     $('.input2').each(function(){
         $(this).on('blur', function(){
             if($(this).val().trim() != "") {

@@ -20,6 +20,11 @@ window.addEventListener("load", () => {
   let history = [];
   let hasRolled = false;
 
+/* 
+The following will move the Roll History Section from
+the left hand side of the page to the top, for mobile
+resolutions.
+*/
   if ($(window).width() > 760){
     $("#hideHistory").removeAttr('data-target');
     $("#historicRolls").removeAttr('class')
@@ -46,6 +51,7 @@ window.addEventListener("load", () => {
   
   $("#results").hide();
 
+//Renders the initial dice images
   allthedice.forEach((item) => {
     let dice = document.createElement("div");
     dice.innerHTML = `<img src="${item.image}"/>`;
@@ -59,6 +65,7 @@ window.addEventListener("load", () => {
     diceDiv.append(dice);
   });
 
+  //Each initial dice selected will now render in the "Selected" box
   renderDiceSelected = () => {
     diceSelectedDiv.innerHTML = "";
     SelectedDice.forEach((item) => {
@@ -68,6 +75,7 @@ window.addEventListener("load", () => {
     });
   };
 
+//As dice are rendered, results are also randomised, but not displayed to user
   rollingDiceSelected = () => {
     diceResultDiv.innerHTML = "";
     SelectedDice.forEach((item, index) => {
@@ -78,7 +86,8 @@ window.addEventListener("load", () => {
       diceResultDiv.append(dice);
     });
   };
-
+  
+//Stores the information on which dice were rolled on press of Roller button
   saveHistory = () => {
     if (hasRolled) {
       let rolls = [];
@@ -91,6 +100,7 @@ window.addEventListener("load", () => {
     }
   };
 
+//Renders on pressing of the Roller button
   renderHistory = () => {
     if (hasRolled) {
       diceHistoryDiv.innerHTML = "";
@@ -109,12 +119,14 @@ window.addEventListener("load", () => {
     }
   };
 
+//If the user enters a reason into the text box, prepends it to the history
   rollReason = (purpose) => {
     let rollingFor = document.createElement("div");
     rollingFor.innerText = purpose;
     diceHistoryDiv.prepend(rollingFor);
   };
 
+//Displays the results from rollingDiceSelected function
   rollalldice = () => {
     if (SelectedDice == "") {
       hasrolled = false;
@@ -135,6 +147,7 @@ window.addEventListener("load", () => {
     hasRolled = false;
   };
 
+//If there were Selected dice, button press empties selection
   $("#restart").click(function () {
     $("#selected").empty();
     $("#results").empty();

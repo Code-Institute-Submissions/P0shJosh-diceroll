@@ -1,3 +1,7 @@
+/*
+Code all based on samples from Maps Javascript Api
+*/
+
 let map;
 let service;
 let infowindow;
