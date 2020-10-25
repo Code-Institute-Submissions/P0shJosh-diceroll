@@ -175,7 +175,7 @@ resolutions.
     });
   };
 
-//As dice are rendered, results are also randomised
+//As dice are rendered, results are also randomised, but not display to the user
   rollingDiceSelected = () => {
     diceResultDiv.innerHTML = "";
     SelectedDice.forEach((item, index) => {
@@ -226,7 +226,8 @@ resolutions.
     rollingFor.innerText = purpose;
     diceHistoryDiv.prepend(rollingFor);
   };
-  
+
+//Displays the results from rollingDiceSelected function
   rollalldice = () => {
     if (SelectedDice == "") {
       hasrolled = false;
