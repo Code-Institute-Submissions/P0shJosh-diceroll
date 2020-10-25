@@ -247,6 +247,72 @@ a:hover {
   transition: all 0.4s;
 }
 
+.button {
+  min-height: 5vh;
+  border-color: rgb(230, 221, 255);
+}
+
+.btn.btn-secondary,
+.btn.btn-primary {
+  color: black;
+  font-family: "Exo 2", sans-serif;
+  background-color: rgb(221, 229, 255);
+  border-color: rgb(230, 221, 255);
+  -webkit-box-shadow: none;
+}
+
+.btn.btn-secondary.focus,
+.btn.btn-secondary:focus,
+.btn.btn-primary.focus,
+.btn.btn-primary:focus {
+  color: black;
+  background-color: rgb(221, 229, 255);
+  border-color: rgb(230, 221, 255);
+}
+
+.btn.btn-secondary:hover,
+.btn.btn-primary:hover {
+  color: black;
+  background-color: rgb(221, 229, 255);
+  border-color: rgb(230, 221, 255);
+}
+
+.btn.btn-secondary.active,
+.btn.btn-secondary:active,
+.btn.btn-primary.active,
+.btn.btn-primary:active {
+  color: black;
+  background-color: rgb(230, 221, 255);
+  border-color: rgb(230, 221, 255);
+}
+
+.btn.btn-secondary.active.focus,
+.btn.btn-secondary.active:focus,
+.btn.btn-secondary.active:hover,
+.btn.btn-secondary:active.focus,
+.btn.btn-secondary:active:focus,
+.btn.btn-secondary:active:hover,
+.btn.btn-primary.active.focus,
+.btn.btn-primary.active:focus,
+.btn.btn-primary.active:hover,
+.btn.btn-primary:active.focus,
+.btn.btn-primary:active:focus,
+.btn.btn-primary:active:hover,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus {
+  color: #fff;
+  background-color: rgb(230, 221, 255);
+  border-color: rgb(224, 231, 255);
+  outline: none;
+  box-shadow: 0 0 0 0.2rem grey;
+}
+
+.rollingPurpose {
+  position: relative;
+  justify-content: center;
+  font-family: "Roboto Mono", monospace;
+}
+
 @media only screen and (max-width: 760px) {
   #historicRolls {
     z-index: 2;
@@ -387,72 +453,6 @@ a:hover {
   }
 }
 
-.button {
-  min-height: 5vh;
-  border-color: rgb(230, 221, 255);
-}
-
-.btn.btn-secondary,
-.btn.btn-primary {
-  color: black;
-  font-family: "Exo 2", sans-serif;
-  background-color: rgb(221, 229, 255);
-  border-color: rgb(230, 221, 255);
-  -webkit-box-shadow: none;
-}
-
-.btn.btn-secondary.focus,
-.btn.btn-secondary:focus,
-.btn.btn-primary.focus,
-.btn.btn-primary:focus {
-  color: black;
-  background-color: rgb(221, 229, 255);
-  border-color: rgb(230, 221, 255);
-}
-
-.btn.btn-secondary:hover,
-.btn.btn-primary:hover {
-  color: black;
-  background-color: rgb(221, 229, 255);
-  border-color: rgb(230, 221, 255);
-}
-
-.btn.btn-secondary.active,
-.btn.btn-secondary:active,
-.btn.btn-primary.active,
-.btn.btn-primary:active {
-  color: black;
-  background-color: rgb(230, 221, 255);
-  border-color: rgb(230, 221, 255);
-}
-
-.btn.btn-secondary.active.focus,
-.btn.btn-secondary.active:focus,
-.btn.btn-secondary.active:hover,
-.btn.btn-secondary:active.focus,
-.btn.btn-secondary:active:focus,
-.btn.btn-secondary:active:hover,
-.btn.btn-primary.active.focus,
-.btn.btn-primary.active:focus,
-.btn.btn-primary.active:hover,
-.btn.btn-primary:active.focus,
-.btn.btn-primary:active:focus,
-.btn.btn-primary:active:hover,
-.btn-primary:not(:disabled):not(.disabled):active:focus,
-.btn-secondary:not(:disabled):not(.disabled):active:focus {
-  color: #fff;
-  background-color: rgb(230, 221, 255);
-  border-color: rgb(224, 231, 255);
-  outline: none;
-  box-shadow: 0 0 0 0.2rem grey;
-}
-
-.rollingPurpose {
-  position: relative;
-  justify-content: center;
-  font-family: "Roboto Mono", monospace;
-}
-
 @media only screen and (max-height: 800px) {
   #allthedice img,
   #selected img {
@@ -517,13 +517,43 @@ a:hover {
   }
 }
 
+@media only screen and (max-width: 350px) {
+  #roller,
+  #restart {
+    height: 3em;
+    font-size: 11px;
+  }
+
+  #allthedice img,
+  #selected img {
+    height: 100%;
+  }
+
+  #historicRolls img {
+    width: 1.3em;
+  }
+
+  .dicebox,
+  .ffgselected {
+    min-height: 80px;
+  }
+
+  .chooseDice {
+    height: 140px;
+  }
+
+  .rollingPurpose label {
+    font-size: 15px;
+  }
+}
+
 /*--------------------------------------- Modal Boxes --------------------------------------- */
 #modalBox {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
   width: 150%;
-  height: 80vh;
+  height: 88vh;
 }
 
 .modal-text {
@@ -543,6 +573,9 @@ a:hover {
   height: 60vh;
 }
 
+#whereEdge button {
+  transform: translateY(63vh);
+}
 /*----------------------------How to Use----------------------------*/
 .usage {
   padding-top: 1em;
@@ -901,6 +934,7 @@ textarea.input2 + .focus-input2::after {
   opacity: 1;
 }
 
+/*----------------------------Modal Box Responsivity--------------------------*/
 @media only screen and (max-width: 960px) {
   .diceroll-logo img {
     width: 100vw;
@@ -929,7 +963,7 @@ textarea.input2 + .focus-input2::after {
     font-size: 150%;
   }
 }
-@media only screen and (max-height: 800px) {
+@media only screen and (max-height: 825px) {
   #contactModal {
     height: 100%;
   }
@@ -948,7 +982,7 @@ textarea.input2 + .focus-input2::after {
   }
   #modalBox {
     width: 90%;
-    height: 90vh;
+    height: 95vh;
   }
   #map {
     height: 65vh;
@@ -956,6 +990,31 @@ textarea.input2 + .focus-input2::after {
   .modal-text {
     font-weight: 600;
     font-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .container-contact2 {
+    padding: 0px;
+  }
+  .contact2-form-btn {
+    height: 40px;
+  }
+
+  #map {
+    height: 60vh;
+  }
+
+  #whereEdge button {
+    transform: translateY(58vh);
+  }
+
+  #howModal {
+    height: 95vh;
+  }
+
+  #howModal li {
+    font-size: 13px;
   }
 }
 
