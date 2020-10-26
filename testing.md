@@ -15,25 +15,68 @@
 
 # Testing each Feature
 
-- Colours. Colours loaded as intended across all devices and resolutions. 
+    - Colours. Colours loaded as intended across all devices and resolutions. 
 
-- [Ability to choose which dice set.](/readme/images/features/dice_choose.PNG)
-    - 
+    - [Index Page](/readme/images/features/index.PNG)
+        - 
     
-- [Select specifically which dice to roll, and visualise said dice pool. ](/readme/images/features/dice_selected.PNG)
+    - No Y-Scroll
+        - 
 
-- [Click to roll. ](/readme/images/features/dice_roll.PNG)
+    - [D&D Choose Dice Images](/readme/images/features/dice_choose.PNG)
+        - 
 
-- [Displays results for all the dice rolls.](/readme/images/features/dice_results.PNG)
+    - [D&D Selected Dice](/readme/images/features/dice_selected.PNG)
+        - 
 
-- [Display previous roll results.](/readme/images/features/dice_history.PNG)
+    - [D&D Dice Results](/readme/images/features/dice_results.PNG)
+        - 
 
-- [Contact page to reach site creator. ](/readme/images/features/modal_contact.PNG)
+    - [Star Wars Choose Dice](/readme/images/features/dice_choose_sw.PNG)
+        - 
 
-- [Google Maps Api to find nearest Board Game Cafe ](/readme/images/features/modal_map.PNG)
+    - [Star Wars Selected Dice](/readme/images/features/dice_selected_sw.PNG)
+        - 
 
-- [Information panel on how to use the site. ](/readme/images/features/modal_how.PNG)
-    
+    - [Star Wars Dice Results](/readme/images/features/dice_results_sw.PNG)
+        - 
+
+    - [Past Rolls Button](/readme/images/features/mobile_dice_results.PNG)
+        - 
+
+    - [Past Rolls Content](/readme/images/features/dice_history.PNG)
+        - 
+
+    - [Roll Purpose](/readme/images/features/dice_purpose.PNG)
+        - 
+
+    - [Roller Button](/readme/images/features/dice_roll.PNG)
+        - 
+
+    - [Restart Button](/readme/images/features/dice_empty.PNG)
+        - 
+
+    - [Contact Button](/readme/images/features/button_contact.PNG)
+        - 
+
+    - [Contact Form](/readme/images/features/modal_contact.PNG)
+        - 
+
+    - [Maps Button](/readme/images/features/button_contact.PNG)
+        - 
+
+    - [Google Map Api](/readme/images/features/modal_map.PNG)
+        - 
+
+    - [Switch Game Button](/readme/images/features/button_switch.PNG)
+        - 
+
+    - [How to Play Button](/readme/images/features/button_how.PNG)
+        - 
+
+    - [How to Play Content](/readme/images/features/modal_how.PNG)
+        - 
+
 # Testing the User-stories
 
 - [As a player, I want to be able to select which game’s dice I want to use.](/readme/images/features/selected_game.PNG)
