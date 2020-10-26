@@ -3,11 +3,11 @@
 - [Introduction](#introduction)
 - [UX](#ux)
   * [The Design](#the-design)
-  * [[Wireframes](/wireframes/)](#-wireframes---wireframes--)
+  * [Wireframes](#wireframes
   * [User-stories](#user-stories)
 - [Features](#features)
-  * [**Existing Features**](#--existing-features--)
-  * [**Future Features**](#--future-features--)
+  * [Existing Features](#--existing-features--)
+  * [Future Features](#--future-features--)
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
 - [Deployment](#deployment)
@@ -35,6 +35,7 @@ This year, over half a million people have joined the r/DnD subreddit alone. As 
 In terms of the actual layout of the pages, the idea was to make it as simple as possible. The user should simply be able to click the dice, have the selected dice visible, and their results displayed, with as minimal interaction as possible. I also wanted the user to be able to see their previous rolls, so they could have a constant log as to what they had rolled previously. In some games, debates over rolls do occur, and so having a record would provide for clarity that physically rolling dice cannot. For mobile users, the minimal interactivity was key, and so ensuring that all the content displayed without y-scrolling was critical. Of course, if the user selects a good few dice, this is unavoidable without making the images too small, but this seemed a compromise. For the majority of users, only a few dice would ever be chosen, so this should not be an issue. For users who do require larger numbers of dice to be rolled, then a small bit of scrolling is the compromise. 
 
 It was also important for me to ensure that both the D&D and Star Wars FFG Dice Rollers were symmetrical, for consistencies sake. 
+
 ## [Wireframes](/wireframes/)
 
 [Adobe XD](https://www.adobe.com/uk/products/xd.html) was used to create the initial wireframes, the pdf file with all the wireframes can be viewed in [/wireframes/DiceRoll.pdf](/wireframes/DiceRoll.pdf). 
