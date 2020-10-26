@@ -453,6 +453,30 @@ a:hover {
   }
 }
 
+@media only screen and (max-height: 825px) { 
+  #history {
+    height: 92vh;
+  }
+  
+  .dicebutton {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #roller {
+    margin-top: -15px;
+    margin-bottom: 20px;
+    margin-right: 1vw;
+  }
+
+  #restart {
+    margin-top: -15px;
+    margin-bottom: 20px;
+    margin-left: 1vw;
+    padding: 8px 8px;
+  }
+}
+
 @media only screen and (max-height: 800px) {
   #allthedice img,
   #selected img {
