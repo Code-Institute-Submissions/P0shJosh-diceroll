@@ -53,17 +53,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
     <script src="./assets/js/map.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
     ></script>
-    <script type="text/javascript">
+    <script>
       (function () {
         emailjs.init("user_8R2Nf0xGDOk5V837V47Uc");
       })();
     </script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <title>Dungeons and Dragons</title>
@@ -104,7 +102,7 @@
 
         <!-- Roll Purpose Input Box -->
         <div class="row rollingPurpose">
-          <label for="fname">What's this roll for?</label><br />
+          <label for="rollPurpose">What's this roll for?</label><br />
         </div>
         <div class="row rollingPurpose">
           <input type="text" id="rollPurpose" name="rollPurpose" /><br />
@@ -220,8 +218,8 @@
     >
       <div class="modal-dialog" role="document">
         <div class="modal-content" id="modalBox">
-          <div class="modal-header" id="whereEdge">
-            <h2 class="modal-title modal-text" id="exampleModalLabel">
+          <div class="modal-header">
+            <h2 class="modal-title modal-text">
               Your Local Game Board Cafe
             </h2>
             <button
@@ -336,7 +334,7 @@
         </button>
         <a 
           class="btn btn-primary hvr-grow-shadow" 
-          href="starwars.html" 
+          href="dandd.html" 
           role="button">
           Switch Game?
         </a>
