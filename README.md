@@ -3,18 +3,17 @@
 - [Introduction](#introduction)
 - [UX](#ux)
   * [The Design](#the-design)
-  * [Wireframes](#wireframes)
-    + [Index](#-index---assets-wireframes-indexpng-)
+  * [[Wireframes](/wireframes/)](#-wireframes---wireframes--)
   * [User-stories](#user-stories)
 - [Features](#features)
-  * [Existing Features](#--existing-features--)
-    + [Index.html](#-indexhtml-)
-  * [Future Features](#--future-features--)
+  * [**Existing Features**](#--existing-features--)
+  * [**Future Features**](#--future-features--)
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
   * [Content](#content)
+  * [Media](#media)
   * [Inspiration](#inspiration)
   * [Acknowledgements](#acknowledgements)
 
@@ -29,6 +28,7 @@ This year, over half a million people have joined the r/DnD subreddit alone. As 
 ## The Design
 
 ![Colors Used](/readme/images/features/color_body.PNG)
+
 #FFF7DD was chosen as the colour for the body of this website for for its simple nature. The image has an almost papyrus or tea-stained map like quality, to provide that fantasy-map like feeling. The choice of this colour was purely down to the site creator's preference. 
 #DDE5FF was chosen due to it being the complementary colour to #FFF7DD, and so was selected as the colour for all buttons on the site. The high contrast of this colour provides a nice accent paired with the neutral palette of the body. 
 
