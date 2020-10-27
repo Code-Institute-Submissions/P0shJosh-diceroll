@@ -146,6 +146,8 @@ a:hover {
 /*--------------------------------------- D&D Dice Roller --------------------------------------- */
 .col-md-4 {
   border: 3px dotted black;
+  margin-left: -3px;
+  margin-top: -3px;
 }
 
 .maincontent {
