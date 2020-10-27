@@ -466,16 +466,16 @@ a:hover {
   }
 }
 
-@media only screen and (max-height: 825px) { 
+@media only screen and (max-height: 825px) {
   #history {
     height: 92vh;
   }
-  
+
   .dicebutton {
     display: flex;
     flex-direction: row;
   }
-  
+
   #roller {
     margin-top: -15px;
     margin-bottom: 20px;
@@ -716,7 +716,7 @@ iframe {
   color: #333333;
   line-height: 1.2;
   text-align: center;
-  padding-bottom: 90px;
+  padding-bottom: 70px;
 }
 
 .wrap-input2 {
@@ -939,8 +939,8 @@ textarea.input2 + .focus-input2::after {
   font-size: 13px;
   line-height: 1.4;
   text-align: left;
-  visibility: hidden;
-  opacity: 0;
+  visibility: visible;
+  opacity: 1;
   -webkit-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
   -moz-transition: opacity 0.4s;
@@ -965,11 +965,6 @@ textarea.input2 + .focus-input2::after {
   z-index: 2;
 }
 
-.alert-validate:hover:before {
-  visibility: visible;
-  opacity: 1;
-}
-
 /*----------------------------Modal Box Responsivity--------------------------*/
 @media only screen and (max-width: 960px) {
   .diceroll-logo img {
@@ -980,6 +975,7 @@ textarea.input2 + .focus-input2::after {
   .diceroll-logo {
     position: absolute;
   }
+
   .gamelinks .row {
     position: relative;
     display: flex;
@@ -987,42 +983,53 @@ textarea.input2 + .focus-input2::after {
     flex-wrap: nowrap;
     justify-content: center;
   }
+
   .col-sm {
     width: 20em;
     margin: 0 1em 0 1em;
   }
+
   .centerbox {
     display: none;
   }
+
   .gamelinks h2 {
     font-weight: 500;
     font-size: 150%;
   }
 }
+
 @media only screen and (max-height: 825px) {
   #contactModal {
     height: 100%;
   }
+
   #contactForm {
     height: 55vh;
   }
+
   .wrap-contact2 {
     padding: 20px 15px 110px 15px;
   }
+
   .contact2-form-title {
     font-size: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 35px;
   }
+  
   .wrap-contact2 {
     padding: 20px 15px 110px 15px;
   }
+
   #modalBox {
     width: 90%;
     height: 95vh;
   }
+
   #map {
     height: 65vh;
   }
+
   .modal-text {
     font-weight: 600;
     font-size: 100%;
@@ -1033,10 +1040,16 @@ textarea.input2 + .focus-input2::after {
   .container-contact2 {
     padding: 0px;
   }
+
   .contact2-form-btn {
     height: 40px;
   }
 
+  .contact2-form-title {
+    font-size: 26px;
+    padding-bottom: 12px;
+  }
+  
   #map {
     height: 60vh;
   }
@@ -1051,12 +1064,5 @@ textarea.input2 + .focus-input2::after {
 
   #howModal li {
     font-size: 13px;
-  }
-}
-
-@media (max-width: 992px) {
-  .alert-validate::before {
-    visibility: visible;
-    opacity: 1;
   }
 }

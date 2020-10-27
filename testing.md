@@ -26,58 +26,76 @@
      - On Surface-Duo, there is a very small amount of scrolling needed, as the roller and restart buttons almost touch the footer.
 
 - [D&D Choose Dice Images](/readme/images/features/dice_choose.PNG)
-    - Only loading either game page, they should appear in the top-most box. 
+    - On loading either game page, they should appear in the top-most box. 
     - Rendered as intended across almost all devices.
     - Did not render at all in Internet Explorer
 
 - [D&D Selected Dice](/readme/images/features/dice_selected.PNG)
-    - Only loading either game page, there ought to be an empty box in the middle. 
+    - On loading either game page, there ought to be an empty box in the middle. 
     - Upon selecting dice in the previous box, a matching image should render in this box.
     - Rendered as intended across all devices, that Choose Dice worked for.
     - Given the Choose Dice Images did not render at all in Internet Explorer, the Selected Dice could not render. 
 
 - [D&D Dice Results](/readme/images/features/dice_results.PNG)
-    - Only loading either game page, they should appear in the top-most box. 
+    - On loading either game page, they should appear in the top-most box. 
     - Rendered as intended across all devices, that Choose Dice worked for.
     - Given the Choose Dice Images did not render at all in Internet Explorer, the Dice Results could not render.
 
 - [Star Wars Choose Dice](/readme/images/features/dice_choose_sw.PNG)
-    - Only loading either game page, they should appear in the top-most box. 
+    - On loading either game page, they should appear in the top-most box. 
     - Rendered as intended across almost all devices.
     - Did not render at all in Internet Explorer.
 
 - [Star Wars Selected Dice](/readme/images/features/dice_selected_sw.PNG)
-    - Only loading either game page, there ought to be an empty box in the middle. 
+    - On loading either game page, there ought to be an empty box in the middle. 
     - Upon selecting dice in the previous box, a matching image should render in this box.
     - Rendered as intended across all devices, that Choose Dice worked for.
     - Given the Choose Dice Images did not render at all in Internet Explorer, the Selected Dice could not render. 
 
 - [Star Wars Dice Results](/readme/images/features/dice_results_sw.PNG)
-    - Only loading either game page, there ought to be an empty box at the bottom of the page. 
+    - On loading either game page, there ought to be an empty box at the bottom of the page. 
     - If Dice have been Selected, then pressing Roll ought to reveal results in this box.
     - Rendered as intended across all devices, that Choose Dice worked for.
     - Given the Choose Dice Images did not render at all in Internet Explorer, the Dice Results could not render.
 
 - [Past Rolls Button](/readme/images/features/mobile_dice_results.PNG)
-    - 
+    - Only occurs on mobile resolutions. 
+    - If on a mobile, across the top of either game page, where a navbar might otherwise appear, centrally will be a button.
+    - Button titled "Past Rolls". 
+    - Upon clicking, if rolls have occured, it will reveal the past rolls, otherwise nothing occurs on pressing.
 
 - [Past Rolls Content](/readme/images/features/dice_history.PNG)
-    - 
+    - On desktop or iPad resolutions, when the user has pressed Roll, the results will not only occur in the Results box, but also in this left hand column. 
+    - If further rolls occur, the results will append to this column. 
+    - If only mobile, the results will not be visible until the "Past Rolls" button has been pressed.
+    - Results are appended for mobile too. 
 
 - [Roll Purpose](/readme/images/features/dice_purpose.PNG)
-    - 
+    - At all resolutions, text box with title text appears below the results box, but above the roll/restart buttons. 
+    - Entirely option, but the user can enter text. 
+    - If the user does enter text, whatever text present will be appended to the "Previous Roll" results. 
+    - User can change this text for each roll without affecting previous rolls. 
 
 - [Roller Button](/readme/images/features/dice_roll.PNG)
-    -
+    - Occurs beneath the Roll Purpose at all resolutions. 
+    - Depending on resolution will either appear beside the Restart button or above it. 
+    - On pressing the button, if dice are present in the Selected Box, the results will then be displayed in the results box and past rolls section. 
+    - User can continue to press the button for fresh results. 
 
 - [Restart Button](/readme/images/features/dice_empty.PNG)
-    - 
+    - Occurs beneath the Roll Purpose at all resolutions. 
+    - Depending on resolution will either appear beside the Roller button or below it. 
+    - If dice are present in the Selected box, and/or results in the results box, then pressing this button will empty the arrays and allow the user to select new dice.
 
 - [Contact Button](/readme/images/features/button_contact.PNG)
-    - 
+    - Appears at the bottom of the page, the most left button of the footer. 
+    - Pressing this will reveal a modal for the user with the contact form.
 
 - [Contact Form](/readme/images/features/modal_contact.PNG)
-    - 
+    - Only appears once the user has pressed the "Contact" button.
+    - User must fill all sections; "name", "email", "message", and then press Send message.
+    - If any section is not filled, a warning will be triggered informing the user they must fill it. 
+    - Successful sending will send myself an email with the relevant content. 
 
 - [Maps Button](/readme/images/features/button_contact.PNG)
     - 
@@ -146,6 +164,9 @@
 
 - In both instances, files were validated from local file upload. Validation through URL lead to errors and warnings in regards to bootstrap, which is of no fault regarding my code, and the reason why these errors occured is discussed on the [Bootstrap Site](https://getbootstrap.com/docs/4.5/getting-started/browsers-devices/#validators)
 
+- JS has been validated using [JSHint](https://jshint.com)
+    - The line /*jshint esversion: 6 */ was added to the start each file for testing purposes. 
+
 ## Validation Testing Results 
 
 ### **Index.html**
@@ -160,7 +181,23 @@
 
 ![starwars.html validation](/readme/images/validation/starwars.PNG)
 
-
 ### **Style.css**
 
 ![Style.css validation](/readme/images/validation/css.PNG)
+
+### **dddice.js**
+
+![dddice.js validation](/readme/images/validation/js_dd.PNG)
+
+### **eoedice.js**
+
+![eoedice.js validation](/readme/images/validation/js_eoe.PNG)
+
+### **contact.js**
+
+![contact.js validation](/readme/images/validation/js_contact.PNG)
+
+### **map.js**
+
+![map.js validation](/readme/images/validation/js_map.PNG)
+

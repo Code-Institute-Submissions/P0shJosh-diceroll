@@ -154,7 +154,7 @@
                   id="contactForm"
                   method="post"
                 >
-                  <span class="contact2-form-title"> Contact Us </span>
+                  <span id="successMessage" class="contact2-form-title"> Contact Us </span>
                   <div
                     class="wrap-input2 validate-input"
                     data-validate="Name
@@ -199,6 +199,7 @@
               type="button"
               class="btn btn-secondary hvr-grow-shadow"
               data-dismiss="modal"
+              onclick="changeTitle()"
             >
               Close
             </button>

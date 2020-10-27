@@ -13,11 +13,12 @@ window.addEventListener("load", () => {
                 }
             });    
         });
-                
+       
         var name = $('.validate-input input[name="name"]');
         var email = $('.validate-input input[name="email"]');
         var message = $('.validate-input textarea[name="message"]');
-    
+        
+        //Form Validation ensures all sections filled otherwisw form won't send
         $('.validate-form').on('submit',function(){
             var check = true;
     
@@ -39,13 +40,19 @@ window.addEventListener("load", () => {
             if(check){
                  emailjs.sendForm('service_z3n0zgh',
                       'template_dxkk6p5', this);
+                      document.getElementById('successMessage').innerHTML = "Message Sent!"; //If successful changes title to reflect message sent
                       document.getElementById('contactForm').reset();
             }
             
             return false;
     
         });
-    
+        //If the user closes the modal after, revert the title back to original text
+        changeTitle = () => {
+            document.getElementById('successMessage').innerHTML = "Contact Us";
+        }
+
+        //If form isn't filled out correctly, the following ensures pop ups appear
         $('.validate-form .input2').each(function(){
             $(this).focus(function(){
                hideValidate(this);
