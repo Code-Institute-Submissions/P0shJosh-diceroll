@@ -15,67 +15,84 @@
 
 # Testing each Feature
 
-    - Colours. Colours loaded as intended across all devices and resolutions. 
+- Colours. 
+    - Colours loaded as intended across all devices and resolutions. 
 
-    - [Index Page](/readme/images/features/index.PNG)
-        - 
+- [Index Page](/readme/images/features/index.PNG)
+    - Appeared as intended across all devices. 
     
-    - No Y-Scroll
-        - 
+- No Y-Scroll
+     - Acted as intended for almost all devices.
+     - On Surface-Duo, there is a very small amount of scrolling needed, as the roller and restart buttons almost touch the footer.
 
-    - [D&D Choose Dice Images](/readme/images/features/dice_choose.PNG)
-        - 
+- [D&D Choose Dice Images](/readme/images/features/dice_choose.PNG)
+    - Only loading either game page, they should appear in the top-most box. 
+    - Rendered as intended across almost all devices.
+    - Did not render at all in Internet Explorer
 
-    - [D&D Selected Dice](/readme/images/features/dice_selected.PNG)
-        - 
+- [D&D Selected Dice](/readme/images/features/dice_selected.PNG)
+    - Only loading either game page, there ought to be an empty box in the middle. 
+    - Upon selecting dice in the previous box, a matching image should render in this box.
+    - Rendered as intended across all devices, that Choose Dice worked for.
+    - Given the Choose Dice Images did not render at all in Internet Explorer, the Selected Dice could not render. 
 
-    - [D&D Dice Results](/readme/images/features/dice_results.PNG)
-        - 
+- [D&D Dice Results](/readme/images/features/dice_results.PNG)
+    - Only loading either game page, they should appear in the top-most box. 
+    - Rendered as intended across all devices, that Choose Dice worked for.
+    - Given the Choose Dice Images did not render at all in Internet Explorer, the Dice Results could not render.
 
-    - [Star Wars Choose Dice](/readme/images/features/dice_choose_sw.PNG)
-        - 
+- [Star Wars Choose Dice](/readme/images/features/dice_choose_sw.PNG)
+    - Only loading either game page, they should appear in the top-most box. 
+    - Rendered as intended across almost all devices.
+    - Did not render at all in Internet Explorer.
 
-    - [Star Wars Selected Dice](/readme/images/features/dice_selected_sw.PNG)
-        - 
+- [Star Wars Selected Dice](/readme/images/features/dice_selected_sw.PNG)
+    - Only loading either game page, there ought to be an empty box in the middle. 
+    - Upon selecting dice in the previous box, a matching image should render in this box.
+    - Rendered as intended across all devices, that Choose Dice worked for.
+    - Given the Choose Dice Images did not render at all in Internet Explorer, the Selected Dice could not render. 
 
-    - [Star Wars Dice Results](/readme/images/features/dice_results_sw.PNG)
-        - 
+- [Star Wars Dice Results](/readme/images/features/dice_results_sw.PNG)
+    - Only loading either game page, there ought to be an empty box at the bottom of the page. 
+    - If Dice have been Selected, then pressing Roll ought to reveal results in this box.
+    - Rendered as intended across all devices, that Choose Dice worked for.
+    - Given the Choose Dice Images did not render at all in Internet Explorer, the Dice Results could not render.
 
-    - [Past Rolls Button](/readme/images/features/mobile_dice_results.PNG)
-        - 
+- [Past Rolls Button](/readme/images/features/mobile_dice_results.PNG)
+    - 
 
-    - [Past Rolls Content](/readme/images/features/dice_history.PNG)
-        - 
+- [Past Rolls Content](/readme/images/features/dice_history.PNG)
+    - 
 
-    - [Roll Purpose](/readme/images/features/dice_purpose.PNG)
-        - 
+- [Roll Purpose](/readme/images/features/dice_purpose.PNG)
+    - 
 
-    - [Roller Button](/readme/images/features/dice_roll.PNG)
-        - 
+- [Roller Button](/readme/images/features/dice_roll.PNG)
+    -
 
-    - [Restart Button](/readme/images/features/dice_empty.PNG)
-        - 
+- [Restart Button](/readme/images/features/dice_empty.PNG)
+    - 
 
-    - [Contact Button](/readme/images/features/button_contact.PNG)
-        - 
+- [Contact Button](/readme/images/features/button_contact.PNG)
+    - 
 
-    - [Contact Form](/readme/images/features/modal_contact.PNG)
-        - 
+- [Contact Form](/readme/images/features/modal_contact.PNG)
+    - 
 
-    - [Maps Button](/readme/images/features/button_contact.PNG)
-        - 
+- [Maps Button](/readme/images/features/button_contact.PNG)
+    - 
 
-    - [Google Map Api](/readme/images/features/modal_map.PNG)
-        - 
+- [Google Map Api](/readme/images/features/modal_map.PNG)
+    - 
 
-    - [Switch Game Button](/readme/images/features/button_switch.PNG)
-        - 
+- [Switch Game Button](/readme/images/features/button_switch.PNG)
+    - 
 
-    - [How to Play Button](/readme/images/features/button_how.PNG)
-        - 
+- [How to Play Button](/readme/images/features/button_how.PNG)
+    - 
 
-    - [How to Play Content](/readme/images/features/modal_how.PNG)
-        - 
+- [How to Play Content](/readme/images/features/modal_how.PNG)
+    - 
 
 # Testing the User-stories
 

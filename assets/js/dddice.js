@@ -27,9 +27,9 @@ resolutions.
 */
   if ($(window).width() > 760){
     $("#hideHistory").removeAttr('data-target');
-    $("#historicRolls").removeAttr('class')
+    $("#historicRolls").removeAttr('class');
     $("#history").attr('class', 'col-md-4');
-  };
+  }
   
   if ($(window).width() < 760){
     $("#history").removeAttr('class');
@@ -38,7 +38,7 @@ resolutions.
   windowResize = () => {
     if ($(window).width() > 760) {
       $("#hideHistory").removeAttr('data-target');
-      $("#historicRolls").removeAttr('class')
+      $("#historicRolls").removeAttr('class');
       $("#history").attr('class', 'col-md-4');
       }
     else {
