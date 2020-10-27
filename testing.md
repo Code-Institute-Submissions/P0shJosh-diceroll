@@ -94,23 +94,30 @@
 - [Contact Form](/readme/images/features/modal_contact.PNG)
     - Only appears once the user has pressed the "Contact" button.
     - User must fill all sections; "name", "email", "message", and then press Send message.
+    - Upon submission, the form resets and the contact form title changes to "Message Sent!"
     - If any section is not filled, a warning will be triggered informing the user they must fill it. 
     - Successful sending will send myself an email with the relevant content. 
+    - Closing the form through pressing the Close button, will cause the title to revert.
 
 - [Maps Button](/readme/images/features/button_contact.PNG)
-    - 
+    - Appears at the bottom of the page, second from the left in the footer.
+    - Pressing the button will reveal a modal with a google maps api.
 
 - [Google Map Api](/readme/images/features/modal_map.PNG)
-    - 
+    - Only appears once the user has pressed the "Where to Play" button.
+    - Should auto-center onto the nearest Game Board Cafe based on the users location.
 
 - [Switch Game Button](/readme/images/features/button_switch.PNG)
-    - 
+    - Appears at the bottom of the page, second from the right in the footer.
+    - Pressing this should cause the page to switch to the other game mode.
 
 - [How to Play Button](/readme/images/features/button_how.PNG)
-    - 
+    - Appears at the bottom of the page, furthest right in the footer.
+    - Pressing the button will reveal a modal with text.
 
 - [How to Play Content](/readme/images/features/modal_how.PNG)
-    - 
+    - Only appears once the user has pressed the "How to Play" button.
+    - Once revealed, the user will be presented with simple text on how to use the website, and then they may close the modal whenever ready.
 
 # Testing the User-stories
 
