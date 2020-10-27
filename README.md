@@ -23,6 +23,8 @@
 
 This year, over half a million people have joined the r/DnD subreddit alone. As people went into lockdown, many people have turned to socialising online with friends playing Dungeons & Dragons, or other table top role playing games (table top under normal circumstances). People are using services such as Roll20, Discord, Skype, Zoom to coordinate and play these games. One of the things any player needs to join in these games is a specific set of dice. Different TTRPGs use different dice systems, and so having to purchase sets can get expensive. Thankfully, some of these services have ways included to roll dice, through chat commands - not all of them do however. And, in the future, when people begin to socialise in person again, these games may continue in person too. And so then people cannot rely on the dice systems specific to some websites. The purpose of this DiceRoll website is to give players another option. Whilst owning dice can be fantastic and fun to collect, this site is meant to create an easy alternative for people who do not have any, or simply forgot to bring them to the session - these things happen. 
 
+The website can be found here at [https://p0shjosh.github.io/diceroll/](https://p0shjosh.github.io/diceroll/)
+
 # UX
 
 ## The Design
@@ -56,7 +58,7 @@ Another change was moving the "Clear" button from beneath the historic rolls to 
     - [The player shouldn't need to scroll unless they've selected a good few dice](/readme/images/features/mobile_game.PNG)
 
 - As a player, I want to be able to easily select which dice I want to roll, and to have everything visible simply. 
-    - [Standard array of dice is visisble for the player](/readme/images/features/dice_choose.PNG)
+    - [Standard array of dice is visible for the player](/readme/images/features/dice_choose.PNG)
 
 - As a player, I want to be able to see previous results, so that the group can see what Ive done previously and be clear there’s no lying about the roll. 
     - [After rolling, results will display on the left hand side of the page](/readme/images/features/dice_history.PNG)
@@ -126,7 +128,7 @@ Another change was moving the "Clear" button from beneath the historic rolls to 
     - JavaScript used to enable interactivity of the webpages.
 
 - [jQuery](https://jquery.com)
-    - Lightweight Javascript Library used to simply some functions.
+    - Lightweight Javascript Library used to simplify some functions.
 
 - [Font Awesome 5](https://fontawesome.com)
     - Used for some of the smaller logos such as to "Close". 
