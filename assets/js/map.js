@@ -6,6 +6,7 @@ let map;
 let service;
 let infowindow;
 
+//When the map opens, automatically sets it to the nearest Game Board Cafe to the user
 function initMap() {
   const sydney = new google.maps.LatLng(-33.867, 151.195);
   infowindow = new google.maps.InfoWindow();
@@ -29,6 +30,7 @@ function initMap() {
   });
 }
 
+//Places marker on said Game Board Cafe
 function createMarker(place) {
   const marker = new google.maps.Marker({
     map,
