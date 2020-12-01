@@ -111,11 +111,13 @@
                   id="contactForm"
                   method="post"
                 >
-                  <span class="contact2-form-title"> Contact Us </span>
+                  <span id="successMessage" class="contact2-form-title">
+                    Contact Us
+                  </span>
                   <div
                     class="wrap-input2 validate-input"
                     data-validate="Name
-                    is required"
+                 is required"
                   >
                     <input class="input2" type="text" name="name" />
                     <span class="focus-input2" data-placeholder="NAME"></span>
@@ -123,7 +125,7 @@
                   <div
                     class="wrap-input2 validate-input"
                     data-validate="Valid
-                    email is required: ex@abc.xyz"
+                 email is required: ex@abc.xyz"
                   >
                     <input class="input2" type="text" name="email" />
                     <span class="focus-input2" data-placeholder="EMAIL"></span>
@@ -131,7 +133,7 @@
                   <div
                     class="wrap-input2 validate-input"
                     data-validate="Message
-                    is required"
+                 is required"
                   >
                     <textarea class="input2" name="message"></textarea>
                     <span
@@ -142,7 +144,7 @@
                   <div class="container-contact2-form-btn">
                     <div class="wrap-contact2-form-btn">
                       <div class="contact2-form-bgbtn"></div>
-                      <button class="contact2-form-btn hvr-grow-shadow">
+                      <button class="contact2-form-btn">
                         Send Your Message
                       </button>
                     </div>
@@ -156,6 +158,7 @@
               type="button"
               class="btn btn-secondary hvr-grow-shadow"
               data-dismiss="modal"
+              onclick="changeTitle()"
             >
               Close
             </button>
