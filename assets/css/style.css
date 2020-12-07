@@ -1018,7 +1018,7 @@ textarea.input2 + .focus-input2::after {
     font-size: 30px;
     padding-bottom: 35px;
   }
-  
+
   .wrap-contact2 {
     padding: 20px 15px 110px 15px;
   }
@@ -1051,7 +1051,7 @@ textarea.input2 + .focus-input2::after {
     font-size: 26px;
     padding-bottom: 12px;
   }
-  
+
   #map {
     height: 60vh;
   }
