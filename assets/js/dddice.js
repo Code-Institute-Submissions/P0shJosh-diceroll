@@ -1,12 +1,12 @@
 window.addEventListener("load", () => {
   const allthedice = [
-    { value: 4, image: "assets/images/d4.png" },
-    { value: 6, image: "assets/images/d6.png" },
-    { value: 8, image: "assets/images/d8.png" },
-    { value: 10, image: "assets/images/d10.png" },
-    { value: 12, image: "assets/images/d12.png" },
-    { value: 20, image: "assets/images/d20.png" },
-    { value: 100, image: "assets/images/d100.png" },
+    { value: 4, image: "assets/images/dandd/d4.png" },
+    { value: 6, image: "assets/images/dandd/d6.png" },
+    { value: 8, image: "assets/images/dandd/d8.png" },
+    { value: 10, image: "assets/images/dandd/d10.png" },
+    { value: 12, image: "assets/images/dandd/d12.png" },
+    { value: 20, image: "assets/images/dandd/d20.png" },
+    { value: 100, image: "assets/images/dandd/d100.png" },
   ];
 
   const diceDiv = document.getElementById("allthedice");
@@ -20,38 +20,36 @@ window.addEventListener("load", () => {
   let history = [];
   let hasRolled = false;
 
-/* 
+  /* 
 The following will move the Roll History Section from
 the left hand side of the page to the top, for mobile
 resolutions.
 */
-  if ($(window).width() > 760){
-    $("#hideHistory").removeAttr('data-target');
-    $("#historicRolls").removeAttr('class');
-    $("#history").attr('class', 'col-md-4');
+  if ($(window).width() > 760) {
+    $("#hideHistory").removeAttr("data-target");
+    $("#historicRolls").removeAttr("class");
+    $("#history").attr("class", "col-md-4");
   }
-  
-  if ($(window).width() < 760){
-    $("#history").removeAttr('class');
+
+  if ($(window).width() < 760) {
+    $("#history").removeAttr("class");
   }
 
   windowResize = () => {
     if ($(window).width() > 760) {
-      $("#hideHistory").removeAttr('data-target');
-      $("#historicRolls").removeAttr('class');
-      $("#history").attr('class', 'col-md-4');
-      }
-    else {
-      $("#hideHistory").attr('data-target', '#historicRolls');
-      $("#historicRolls").attr('class', 'collapse');
-      $("#history").removeAttr('class')
-      ;
+      $("#hideHistory").removeAttr("data-target");
+      $("#historicRolls").removeAttr("class");
+      $("#history").attr("class", "col-md-4");
+    } else {
+      $("#hideHistory").attr("data-target", "#historicRolls");
+      $("#historicRolls").attr("class", "collapse");
+      $("#history").removeAttr("class");
     }
   };
-  
+
   $("#results").hide();
 
-//Renders the initial dice images
+  //Renders the initial dice images
   allthedice.forEach((item) => {
     let dice = document.createElement("div");
     dice.innerHTML = `<img src="${item.image}"/>`;
@@ -75,7 +73,7 @@ resolutions.
     });
   };
 
-//As dice are rendered, results are also randomised, but not displayed to user
+  //As dice are rendered, results are also randomised, but not displayed to user
   rollingDiceSelected = () => {
     diceResultDiv.innerHTML = "";
     SelectedDice.forEach((item, index) => {
@@ -86,8 +84,8 @@ resolutions.
       diceResultDiv.append(dice);
     });
   };
-  
-//Stores the information on which dice were rolled on press of Roller button
+
+  //Stores the information on which dice were rolled on press of Roller button
   saveHistory = () => {
     if (hasRolled) {
       let rolls = [];
@@ -100,7 +98,7 @@ resolutions.
     }
   };
 
-//Renders on pressing of the Roller button
+  //Renders on pressing of the Roller button
   renderHistory = () => {
     if (hasRolled) {
       diceHistoryDiv.innerHTML = "";
@@ -119,14 +117,14 @@ resolutions.
     }
   };
 
-//If the user enters a reason into the text box, prepends it to the history
+  //If the user enters a reason into the text box, prepends it to the history
   rollReason = (purpose) => {
     let rollingFor = document.createElement("div");
     rollingFor.innerText = purpose;
     diceHistoryDiv.prepend(rollingFor);
   };
 
-//Displays the results from rollingDiceSelected function
+  //Displays the results from rollingDiceSelected function
   rollalldice = () => {
     if (SelectedDice == "") {
       hasrolled = false;
@@ -147,7 +145,7 @@ resolutions.
     hasRolled = false;
   };
 
-//If there were Selected dice, button press empties selection
+  //If there were Selected dice, button press empties selection
   $("#restart").click(function () {
     $("#selected").empty();
     $("#results").empty();
